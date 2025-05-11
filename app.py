@@ -24,15 +24,15 @@ def login_page():
 @app.route("/register",methods=['POST','GET'])
 def register_page():
     register_page = get_html("templates/register")
-    
+
     if request.method == 'POST':
         username = request.form['userName']
         email = request.form['email']
         password = request.form['password']
 
         if is_registered(email):
-            errorMessage="Email already registered!"
-            return register_page.replace("$$ERROR$$",errorMessage)
+            errorMessage="<p>Email already registered!<p/>"
+            return register_page.replace("<p></p>",errorMessage)
         else:
             register_user(username, email, password)
             return redirect("/home")

@@ -8,9 +8,11 @@
     <title>Your Library</title>
   </head>
   <body>
-    <h1>Register</h1>
-    <p id="error" style="color: red">$$ERROR$$</p>
-    <div>
+    <div class="formContent">
+      <h1 class="registerTitle">Register</h1>
+      <div id="error" style="color: red">
+        <p></p>
+      </div>
       <form
         action="/register"
         method="POST"
@@ -39,6 +41,7 @@
         />
         <button type="submit" class="button">Register</button>
       </form>
+      <p class="checkAccount">Already have an account? <a href="/login">Log In</a></p>
     </div>
 
     <script src="/static/js/formValidation.js"></script>
