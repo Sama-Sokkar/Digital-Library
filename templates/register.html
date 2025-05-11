@@ -9,13 +9,38 @@
   </head>
   <body>
     <h1>Register</h1>
+    <p id="error" style="color: red">$$ERROR$$</p>
     <div>
-      <form action="/register" method="POST" class="form">
-        <input id="userName" placeholder="User Name" class="input" />
-        <input id="email" placeholder="Email" class="input" />
-        <input id="password" placeholder="Password" class="input" />
+      <form
+        action="/register"
+        method="POST"
+        class="form"
+        onsubmit="return validateForm()"
+      >
+        <input
+          id="userName"
+          name="userName"
+          placeholder="User Name"
+          class="input"
+        />
+        <input
+          id="email"
+          name="email"
+          type="email"
+          placeholder="Email"
+          class="input"
+        />
+        <input
+          id="password"
+          name="password"
+          type="password"
+          placeholder="Password"
+          class="input"
+        />
         <button type="submit" class="button">Register</button>
       </form>
     </div>
+
+    <script src="/static/js/formValidation.js"></script>
   </body>
 </html>
