@@ -9,26 +9,28 @@
   </head>
   <body>
     <div class="content">
-        <nav class="navbar navLinks">
-            <a href="/">
-                <h3 class="logo">SmartShelf</h3>
-              </a>
-            <ul class="navUl">
-              <li>
-                <a href="/home"> Home </a>
-              </li>
-              <li>
-                <a href="/addForm">Add A book</a>
-              </li>
-              <li>
-                <a>Search</a>
-              </li>
-            </ul>
-            <div class="logButtons">{{auth_buttons}}</div>
-          </nav>
+      <nav id="nav" class="navbar navLinks">
+        <a href="/">
+          <h3 class="logo">SmartShelf</h3>
+        </a>
+        <ul class="navUl">
+          <li>
+            <a href="/home"> Home </a>
+          </li>
+          <li>
+            <a href="/addForm">Add A book</a>
+          </li>
+          <li>
+            <a>Search</a>
+          </li>
+        </ul>
+        <div class="logButtons">
+          <span id="usernameDisplay"></span>
+          {{auth_buttons}}
+        </div>
+      </nav>
     </div>
 
     <script src="/static/js/formValidation.js"></script>
-
   </body>
 </html>

@@ -18,9 +18,6 @@ function validateForm() {
     error.textContent = "Password must be at least 6 characters long.";
     return false;
   }
-
-  localStorage.setItem("name", userName.value);
-  alert("Welcome " + userName.value + " :), Please Login again");
   return true;
 }
 function validateLogin() {
@@ -29,11 +26,15 @@ function validateLogin() {
     return false;
   }
 
-  localStorage.setItem("name", userName.value);
-  // alert("Welcome " + userName.value + " :) !");
   return true;
 }
 
-function logout(){
-    localStorage.removeItem("name");
+function logout() {
+  localStorage.removeItem("name");
 }
+
+document.addEventListener("DOMContentLoaded", () => {
+  const nameValue = localStorage.getItem("name");
+  document.getElementById("usernameDisplay").innerText =
+    "Hello, " + nameValue + "! :)";
+});
