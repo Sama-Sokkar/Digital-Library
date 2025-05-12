@@ -1,0 +1,51 @@
+.addContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#bookForm {
+  background-color: red;
+  width: 30%;
+  padding: 20px;
+  border: 2px solid #003e5b;
+  background-color: #fbf8f0;
+  margin: 0px auto;
+}
+
+.addLabel {
+  font-weight: bold;
+}
+
+.star{
+    color: red;
+}
+
+.addInput {
+  width: 100%;
+  padding: 8px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.addButton {
+  padding: 10px 15px;
+  background-color: #003e5b;
+  color: #fbf8f0;
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-top: 1rem;
+}
+
+.addButton:hover {
+  background-color: #007b8d;
+}
+
+.addTitle {
+  text-align: center;
+  color: #333;
+}

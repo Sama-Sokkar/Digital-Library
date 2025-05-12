@@ -35,6 +35,8 @@ function logout() {
 
 document.addEventListener("DOMContentLoaded", () => {
   const nameValue = localStorage.getItem("name");
-  document.getElementById("usernameDisplay").innerText =
-    "Hello, " + nameValue + "! :)";
+  if (nameValue) {
+    document.getElementById("usernameDisplay").innerText =
+      "Hello, " + nameValue + "! :)";
+  }
 });

@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/static/css/style.css" />
+    <link rel="stylesheet" href="/static/css/bookForm.css" />
 
     <title>Document</title>
   </head>
@@ -29,6 +30,58 @@
           {{auth_buttons}}
         </div>
       </nav>
+
+      <!------------------- BODY ------------------->
+
+      <div class="addContent">
+        <h2 class="addTitle">Add a Book</h2>
+        <form id="bookForm">
+          <label class="addLabel"
+            >Title <span class="star">*</span>:
+            <input type="text" name="title"   class="addInput" /></label
+          ><br />
+          <label class="addLabel"
+            >Author <span class="star">*</span>:
+            <input type="text" name="author" required class="addInput" /></label
+          ><br />
+          <label class="addLabel"
+            >Year <span class="star">*</span>:
+            <input type="number" name="year"   class="addInput" /></label
+          ><br />
+          <label class="addLabel"
+            >Description:
+            <textarea
+              name="description"
+              rows="4"
+              cols="40"
+              class="addInput"
+            ></textarea></label
+          ><br />
+          <label class="addLabel"
+            >Review:
+            <textarea
+              name="review"
+              rows="3"
+              cols="40"
+              placeholder="Write your review..."
+              class="addInput"
+            ></textarea></label
+          ><br />
+          <label class="addLabel"
+            >Percentage Read:
+            <input
+              type="number"
+              name="percentage"
+              min="0"
+              max="100"
+              step="1"
+              placeholder="0-100%"
+              class="addInput"
+            /> </label
+          ><br />
+          <button type="submit" class="addButton">Add Book</button>
+        </form>
+      </div>
     </div>
 
     <script src="/static/js/formValidation.js"></script>
