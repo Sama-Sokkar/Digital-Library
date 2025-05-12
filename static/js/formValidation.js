@@ -1,23 +1,39 @@
+// register constants
+const error = document.getElementById("error");
+const userName = document.getElementById("userName");
+const email = document.getElementById("email");
+const password = document.getElementById("password");
+
+// Login constants
+const loginEmail = document.getElementById("loginEmail");
+const loginPassword = document.getElementById("loginPassword");
+
 function validateForm() {
-  document.getElementById("error").textContent = "";
-
-  const userName = document.getElementById("userName").value;
-  const email = document.getElementById("email").value;
-  const password = document.getElementById("password").value;
-
-  if (!userName || !email || !password) {
-    document.getElementById("error").textContent = "All fields are required!";
+  if (!userName.value || !email.value || !password.value) {
+    error.textContent = "All fields are required!";
     return false;
   }
 
-  if (password.length < 6) {
-    document.getElementById("error").textContent =
-      "Password must be at least 6 characters long.";
+  if (password.value.length < 6) {
+    error.textContent = "Password must be at least 6 characters long.";
     return false;
   }
 
-  localStorage.setItem("name", userName);
-  alert("Welcome " + userName + " :) !");
-
+  localStorage.setItem("name", userName.value);
+  alert("Welcome " + userName.value + " :), Please Login again");
   return true;
+}
+function validateLogin() {
+  if (!loginEmail.value || !loginPassword.value) {
+    error.textContent = "Both email and password are required!";
+    return false;
+  }
+
+  localStorage.setItem("name", userName.value);
+  // alert("Welcome " + userName.value + " :) !");
+  return true;
+}
+
+function logout(){
+    localStorage.removeItem("name");
 }

@@ -10,7 +10,9 @@
   <body>
     <div class="content">
       <nav class="navbar navLinks">
-        <h3 class="logo">SmartShelf</h3>
+        <a href="/">
+          <h3 class="logo">SmartShelf</h3>
+        </a>
         <ul class="navUl">
           <li>
             <a href="/home"> Home </a>
@@ -22,10 +24,7 @@
             <a>Search</a>
           </li>
         </ul>
-        <div class="logButtons">
-          <a href="/login" class="navLinks">Login</a>
-          <a href="/register" class="navLinks">Register</a>
-        </div>
+        <div class="logButtons">{{auth_buttons}}</div>
       </nav>
       <div class="home">
         <h1 class="title">Welcome to Your Digital Library!</h1>
@@ -40,5 +39,7 @@
         <img src="static/images/background.png" alt="Library" class="homeImg" />
       </div>
     </div>
+
+    <script src="/static/js/formValidation.js"></script>
   </body>
 </html>

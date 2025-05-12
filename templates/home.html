@@ -1,11 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/static/css/style.css" />
+
     <title>Document</title>
-</head>
-<body>
-    <h1>Home</h1>
-</body>
+  </head>
+  <body>
+    <div class="content">
+      <nav class="navbar navLinks">
+        <a href="/">
+          <h3 class="logo">SmartShelf</h3>
+        </a>
+        <ul class="navUl">
+          <li>
+            <a href="/home">Home</a>
+          </li>
+          <li>
+            <a href="/addForm">Add A book</a>
+          </li>
+          <li>
+            <a>Search</a>
+          </li>
+        </ul>
+        <div class="logButtons">{{auth_buttons}}</div>
+      </nav>
+    </div>
+
+    <script src="/static/js/formValidation.js"></script>
+  </body>
 </html>

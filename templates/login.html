@@ -1,11 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/static/css/register.css" />
     <title>Your Library</title>
-</head>
-<body>
-    <h1>Login</h1>
-</body>
+  </head>
+  <body>
+    <div class="formContent">
+      <h1 class="registerTitle">Log-in</h1>
+      <div id="error">
+        <p></p>
+      </div>
+      <form
+        action="/login"
+        method="POST"
+        class="form"
+        onsubmit="return validateLogin()"
+      >
+        <input
+          id="loginEmail"
+          name="loginEmail"
+          type="email"
+          placeholder="Email"
+          class="input"
+        />
+        <input
+          id="loginPassword"
+          name="loginPassword"
+          type="password"
+          placeholder="Password"
+          class="input"
+        />
+        <button type="submit" class="button">Login</button>
+      </form>
+      <p class="checkAccount">
+        Don't have an account? <a href="/register">Sign Up</a>
+      </p>
+    </div>
+
+    <script src="/static/js/formValidation.js"></script>
+  </body>
 </html>

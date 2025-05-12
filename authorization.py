@@ -1,6 +1,6 @@
 import json
 
-users_file = "users.json"
+users_file = "data/users.json"
 
 # reads data from the JSON file and converts it into a Python object 
 def load_users():

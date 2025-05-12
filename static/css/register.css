@@ -1,6 +1,5 @@
 body {
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
   height: 100vh;
@@ -9,31 +8,35 @@ body {
 }
 
 .formContent {
-  border-radius: 8px;
   background-color: #003e5b;
+  border-radius: 8px;
   width: 45%;
   height: 65%;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.356);
 }
 
 .registerTitle {
   color: #fbf8f0;
-  margin-bottom:0 ;
+}
+
+#error{
+  color: red;
+  padding-bottom: 10px;
 }
 
 .form {
   display: flex;
   flex-direction: column;
   width: 70%;
-  height: 100%;
+  gap: 1.4rem;
 }
 
 .input {
   border-radius: 8px;
-  margin: 1rem 0;
   height: 2rem;
   padding: 0.5rem 1rem;
   background-color: #fbf8f0;
@@ -45,7 +48,7 @@ body {
   color: #003e5b;
   font-size: 1rem;
   padding: 0.7rem 2rem;
-  margin-top: 1rem;
+  margin-bottom: 1rem;
   cursor: pointer;
   border: none;
   transition: background-color 0.3s ease, transform 0.2s ease;
@@ -58,7 +61,6 @@ body {
 
 .checkAccount {
   color: #fbf8f0;
-  margin-top: 1rem;
 }
 
 .checkAccount a {
