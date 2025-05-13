@@ -1,10 +1,99 @@
 [
   {
-    "title": "Harry Potter",
+    "id": 1,
+    "title": "The Great Gatsby",
+    "author": "F. Scott Fitzgerald",
+    "year": "1925",
+    "review": "A timeless classic about the American Dream.",
+    "description": "A story of wealth, love, and disillusionment in the Roaring Twenties.",
+    "percentage": "92"
+  },
+  {
+    "id": 2,
+    "title": "1984",
+    "author": "George Orwell",
+    "year": "1949",
+    "review": "A powerful dystopian novel about surveillance and control.",
+    "description": "A totalitarian regime uses surveillance to control its citizens' every move.",
+    "percentage": "98"
+  },
+  {
+    "id": 3,
+    "title": "To Kill a Mockingbird",
+    "author": "Harper Lee",
+    "year": "1960",
+    "review": "A gripping story of racial injustice in the American South.",
+    "description": "The narrative explores the deeply ingrained racial prejudice in a small town.",
+    "percentage": "95"
+  },
+  {
+    "id": 4,
+    "title": "Pride and Prejudice",
+    "author": "Jane Austen",
+    "year": "1813",
+    "review": "A witty and romantic exploration of social class and marriage.",
+    "description": "The story of Elizabeth Bennet and her relationship with the proud Mr. Darcy.",
+    "percentage": "90"
+  },
+  {
+    "id": 5,
+    "title": "The Catcher in the Rye",
+    "author": "J.D. Salinger",
+    "year": "1951",
+    "review": "A raw portrayal of teenage angst and rebellion.",
+    "description": "A story about a disillusioned teen named Holden Caulfield who rejects the adult world.",
+    "percentage": "85"
+  },
+  {
+    "id": 6,
+    "title": "a",
+    "author": "a55",
+    "year": "2000",
+    "review": "lkk",
+    "description": "",
+    "percentage": ""
+  },
+  {
+    "title": "aa",
     "author": "aa",
     "year": "2002",
-    "review": "ssss",
-    "description": "ssss",
-    "percentage": "50"
+    "review": "aa",
+    "description": "",
+    "percentage": ""
+  },
+  {
+    "id": 8,
+    "title": "aa",
+    "author": "aa",
+    "year": "2002",
+    "review": "aa",
+    "description": "",
+    "percentage": ""
+  },
+  {
+    "id": 9,
+    "title": "s",
+    "author": "s",
+    "year": "200",
+    "review": "s",
+    "description": "",
+    "percentage": ""
+  },
+  {
+    "title": "s",
+    "author": "s",
+    "year": "200",
+    "review": "s",
+    "description": "",
+    "percentage": ""
+  },
+  {
+    "id": 11,
+    "title": "a",
+    "author": "a",
+    "year": "1",
+    "review": "a",
+    "description": "",
+    "percentage": ""
   }
 ]
