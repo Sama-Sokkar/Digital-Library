@@ -1,6 +1,7 @@
 import flask
 from flask import request,redirect,session
 from authorization import load_users, save_users, is_registered, register_user
+from addBook import register_book
 
 
 app = flask.Flask("library")
@@ -22,15 +23,26 @@ def index_page():
 @app.route("/home", methods=['GET'])
 def home_page():
     page = get_html("templates/home")
+
+    # Inject username into localStorage
     if "user" in session:
         username = session["user"]["username"]
-        # Inject a small script that sets localStorage
-        script = f"""
+        page += f"""
         <script>
           localStorage.setItem("name", "{username}");
         </script>
         """
-        page += script
+
+    # Inject alert if there's a success message in query params
+    success_msg = request.args.get("success")
+    if success_msg:
+        page += f"""
+        <script>
+          document.addEventListener("DOMContentLoaded", function() {{
+              showAlert("{success_msg}");
+          }});
+        </script>
+        """
     return page
 
 
@@ -76,10 +88,21 @@ def register_page():
     return register_page
     
 
-@app.route("/addForm")
+@app.route("/addForm",methods=['GET', 'POST'])
 def add_page():
     if "user" not in session:
         return redirect("/login")
+    if request.method == 'POST':
+        title = request.form['title']
+        author = request.form['author']
+        year = request.form['year']
+        review = request.form['review']
+        description = request.form['description']
+        percentage = request.form['percentage']
+
+        register_book(title, author, year,review,description,percentage)
+        return redirect("/home?success=Book+Added+Successfully!")
+    
     return get_html("templates/addForm")
 
 @app.route("/logout")

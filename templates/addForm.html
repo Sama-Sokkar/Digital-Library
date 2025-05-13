@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="/static/css/style.css" />
     <link rel="stylesheet" href="/static/css/bookForm.css" />
 
-    <title>Document</title>
+    <title>Your Library</title>
   </head>
   <body>
     <div class="content">
@@ -33,12 +33,13 @@
 
       <!------------------- BODY ------------------->
 
+
       <div class="addContent">
         <h2 class="addTitle">Add a Book</h2>
-        <form id="bookForm">
+        <form id="bookForm" method="POST">
           <label class="addLabel"
             >Title <span class="star">*</span>:
-            <input type="text" name="title"   class="addInput" /></label
+            <input type="text" name="title" class="addInput" /></label
           ><br />
           <label class="addLabel"
             >Author <span class="star">*</span>:
@@ -46,7 +47,18 @@
           ><br />
           <label class="addLabel"
             >Year <span class="star">*</span>:
-            <input type="number" name="year"   class="addInput" /></label
+            <input type="number" name="year" class="addInput" /></label
+          ><br />
+          <label class="addLabel"
+            >Review <span class="star">*</span>:
+            <textarea
+              name="review"
+              rows="3"
+              cols="40"
+              placeholder="Write your review ..."
+              class="addInput"
+              required
+            ></textarea></label
           ><br />
           <label class="addLabel"
             >Description:
@@ -58,16 +70,6 @@
             ></textarea></label
           ><br />
           <label class="addLabel"
-            >Review:
-            <textarea
-              name="review"
-              rows="3"
-              cols="40"
-              placeholder="Write your review..."
-              class="addInput"
-            ></textarea></label
-          ><br />
-          <label class="addLabel"
             >Percentage Read:
             <input
               type="number"
@@ -75,7 +77,7 @@
               min="0"
               max="100"
               step="1"
-              placeholder="0-100%"
+              placeholder="0 - 100%"
               class="addInput"
             /> </label
           ><br />
@@ -85,5 +87,6 @@
     </div>
 
     <script src="/static/js/formValidation.js"></script>
+
   </body>
 </html>

@@ -1,3 +1,9 @@
+.content {
+  background-image: url("/static/images/back.jpeg");
+  background-position: center;
+  /* background-repeat: no-repeat;  */
+  background-size: contain;
+}
 .addContent {
   display: flex;
   flex-direction: column;
@@ -15,10 +21,12 @@
 
 .addLabel {
   font-weight: bold;
+  color: #003e5b;
+
 }
 
-.star{
-    color: red;
+.star {
+  color: red;
 }
 
 .addInput {
@@ -47,5 +55,6 @@
 
 .addTitle {
   text-align: center;
-  color: #333;
+  color: #003e5b;
+
 }
