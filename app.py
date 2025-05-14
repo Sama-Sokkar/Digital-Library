@@ -44,12 +44,11 @@ def home_page():
             <p><strong>Author:</strong> {book['author']}</p>
             <p><strong>Year:</strong> {book['year']}</p>
             <p><strong>Review:</strong> {book['review']}</p>
+            <a href="/book/{book['id']}" class="details-button">View Details</a>
+
             <hr>
         </div>
         """
-            #  <a href="/book/{book['id']}" class="details-button">View Details</a>
-
-    # Replace placeholder in HTML file (e.g. {{books}})
     page = page.replace("{{books}}", books_html)
 
     # Inject alert if there's a success message in query params
@@ -66,22 +65,34 @@ def home_page():
     return page
 
 
+@app.route("/book/<book_id>")
+def book_details(book_id):
+    books = load_books()
+    book = next((b for b in books if str(b["id"]) == str(book_id)), None)
 
-# @app.route("/book/<int:book_id>")
-# def book_details(book_id):
-#     books = load_books()
-#     selected_book = next((book for book in books if book["id"] == book_id), None)
+    if not book:
+        return "<h1>Book not found</h1>", 404
 
-#     # if not selected_book:
-#     #     return abort(404)
+    content = get_html("templates/bookDetails") 
+    content = content.replace("{{title}}", book["title"])
+    content = content.replace("{{author}}", book["author"])
+    content = content.replace("{{year}}", str(book["year"]))
+    content = content.replace("{{review}}", book["review"])
+    # Only show description and percentage if it exists
+    if book.get("description"):
+        description_html = f"<p><strong>Description:</strong> {book['description']}</p>"
+    else:
+        description_html = ""
 
-#     page = get_html("templates/bookDetails")
+    if book.get("percentage"):
+        percentage_html = f"<p><strong>Percentage:</strong> {book['percentage']}</p>"
+    else:
+        percentage_html = ""
 
-#     # Fill in the book details into the HTML
-#     for key, value in selected_book.items():
-#         page = page.replace(f"{{{{{key}}}}}", str(value))
+    content = content.replace("{{description}}", description_html)
+    content = content.replace("{{percentage}}", percentage_html)
 
-#     return page
+    return content
 
 
 @app.route("/login",methods=['POST','GET'])
