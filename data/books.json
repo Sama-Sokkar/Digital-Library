@@ -41,25 +41,53 @@
     "author": "J.D. Salinger",
     "year": "1951",
     "review": "A raw portrayal of teenage angst and rebellion.",
-    "description": "A story about a disillusioned teen named Holden Caulfield who rejects the adult world.",
-    "percentage": "85"
+    "description": "",
+    "percentage": ""
   },
   {
     "id": 6,
-    "title": "a",
-    "author": "a55",
-    "year": "2000",
-    "review": "lkk",
+    "title": "Moby-Dick",
+    "author": "Herman Melville",
+    "year": "1851",
+    "review": "An epic tale of obsession and the sea.",
     "description": "",
     "percentage": ""
   },
   {
     "id": 7,
-    "title": "sas",
-    "author": "ss",
-    "year": "22",
-    "review": "mkjjjjj",
-    "description": "",
-    "percentage": ""
+    "title": "Crime and Punishment",
+    "author": "Fyodor Dostoevsky",
+    "year": "1866",
+    "review": "A deep psychological study of guilt and redemption.",
+    "description": "The inner turmoil of Raskolnikov, a man who believes he's above moral law after committing murder.",
+    "percentage": "91"
+  },
+  {
+    "id": 8,
+    "title": "The Hobbit",
+    "author": "J.R.R. Tolkien",
+    "year": "1937",
+    "review": "A charming and adventurous prelude to the epic Lord of the Rings.",
+    "description": "Bilbo Baggins embarks on an unexpected journey to help reclaim a lost dwarven kingdom.",
+    "percentage": "93"
+  },
+  {
+    "id": 9,
+    "title": "Jane Eyre",
+    "author": "Charlotte Brontë",
+    "year": "1847",
+    "review": "A bold narrative of love, independence, and resilience.",
+    "description": "Jane's journey from a troubled childhood to a passionate romance with Mr. Rochester.",
+    "percentage": "89"
+  },
+  {
+    "id": 10,
+    "title": "Fahrenheit 451",
+    "author": "Ray Bradbury",
+    "year": "1953",
+    "review": "A haunting warning against censorship and passive consumption.",
+    "description": "In a future where books are banned, a fireman begins to question his role in society.",
+    "percentage": "86"
   }
+  
 ]

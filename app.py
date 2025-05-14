@@ -44,9 +44,8 @@ def home_page():
             <p><strong>Author:</strong> {book['author']}</p>
             <p><strong>Year:</strong> {book['year']}</p>
             <p><strong>Review:</strong> {book['review']}</p>
-            <a href="/book/{book['id']}" class="details-button">View Details</a>
-
-            <hr>
+            <a href="/book/{book['id']}" class="details-link">View Details</a>
+           
         </div>
         """
     page = page.replace("{{books}}", books_html)
@@ -68,31 +67,32 @@ def home_page():
 @app.route("/book/<book_id>")
 def book_details(book_id):
     books = load_books()
-    book = next((b for b in books if str(b["id"]) == str(book_id)), None)
+    
+    # Find the book using a loop
+    book = None
+    for b in books:
+        if str(b.get("id")) == str(book_id):
+            book = b
+            break
 
     if not book:
-        return "<h1>Book not found</h1>", 404
+        return "<h1>Book not found</h1>"
 
     content = get_html("templates/bookDetails") 
-    content = content.replace("{{title}}", book["title"])
-    content = content.replace("{{author}}", book["author"])
-    content = content.replace("{{year}}", str(book["year"]))
-    content = content.replace("{{review}}", book["review"])
-    # Only show description and percentage if it exists
-    if book.get("description"):
-        description_html = f"<p><strong>Description:</strong> {book['description']}</p>"
-    else:
-        description_html = ""
+    content = content.replace("{{title}}", book.get("title", "N/A"))
+    content = content.replace("{{author}}", book.get("author", "N/A"))
+    content = content.replace("{{year}}", str(book.get("year", "N/A")))
+    content = content.replace("{{review}}", book.get("review", "N/A"))
 
-    if book.get("percentage"):
-        percentage_html = f"<p><strong>Percentage:</strong> {book['percentage']}</p>"
-    else:
-        percentage_html = ""
+    # Only show description and percentage if they exist
+    description_html = f"<p><strong>Description:</strong> {book['description']}</p>" if book.get("description") else ""
+    percentage_html = f"<p><strong>Percentage:</strong> {book['percentage']}%</p>" if book.get("percentage") else ""
 
     content = content.replace("{{description}}", description_html)
     content = content.replace("{{percentage}}", percentage_html)
 
     return content
+
 
 
 @app.route("/login",methods=['POST','GET'])

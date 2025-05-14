@@ -5,10 +5,9 @@
 
 .bookGrid {
   display: grid;
-  /* grid-template-columns: repeat(4, 1fr); */
   grid-template-columns: repeat(auto-fit, minmax(300px, 2fr));
   gap: 20px;
-  padding: 0 6rem;
+  padding: 0 5rem;
 }
 
 .book-card {
@@ -26,31 +25,24 @@
 
 .book-card h3 {
   margin-top: 0;
-  color: #333;
+  color: #003e5b;
 }
 
 .book-card p {
-  margin: 6px 0;
+  margin: 10px 0;
   color: #555;
 }
-.book-detail {
-    max-width: 700px;
-    margin: 50px auto;
-    padding: 30px;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    background-color: white;
-  }
-  .book-detail h1 {
-    margin-bottom: 20px;
-  }
-  .back-button {
-    display: inline-block;
-    margin-top: 20px;
-    text-decoration: none;
-    color: #fff;
-    background-color: #444;
-    padding: 10px 15px;
-    border-radius: 5px;
-  }
-  
+
+.details-link {
+  display: inline-block;
+  padding: 8px;
+  margin-bottom: 3px;
+  background-color: #003e5b;
+  color: #fbf8f0;
+  text-decoration: none;
+  border-radius: 7px;
+}
+
+.details-link:hover {
+  background-color: #007b8d;
+}
