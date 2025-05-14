@@ -4,17 +4,44 @@
     <meta charset="UTF-8" />
     <title>{{title}}</title>
     <link rel="stylesheet" href="/static/css/bookDetails.css" />
+    <link rel="stylesheet" href="/static/css/style.css">
   </head>
-  <body class="details-body">
-    <div class="container">
-      <h1 class="details-title">{{title}}</h1>
-      <p class="details-p"><strong>Author:</strong> {{author}}</p>
-      <p class="details-p"><strong>Year:</strong> {{year}}</p>
-      <p class="details-p"><strong>Review:</strong> {{review}}</p>
+  <body >
+    <div class="content">
+      <nav class="navbar navLinks">
+        <a href="/">
+          <h3 class="logo">SmartShelf</h3>
+        </a>
+        <ul class="navUl">
+          <li>
+            <a href="/home"> Home </a>
+          </li>
+          <li>
+            <a href="/addForm">Add A book</a>
+          </li>
+          <li>
+            <a href="/profile">Profile</a>
+          </li>
+        </ul>
+        <div class="logButtons">
+          <span id="usernameDisplay"></span>
 
-      {{description}} {{percentage}}
+          {{auth_buttons}}
+        </div>
+      </nav>
+      <div class="home">
 
-      <!-- <a href="/home">Back to Home</a> -->
-    </div>
+        <div class="container">
+          <h1 class="details-title">{{title}}</h1>
+          <p class="details-p"><strong>Author:</strong> {{author}}</p>
+          <p class="details-p"><strong>Year:</strong> {{year}}</p>
+          <p class="details-p"><strong>Review:</strong> {{review}}</p>
+          
+          {{description}} {{percentage}}
+        </div>
+      </div>
+
+    <script src="/static/js/formValidation.js"></script>
+
   </body>
 </html>

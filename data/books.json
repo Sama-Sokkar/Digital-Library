@@ -74,7 +74,7 @@
   {
     "id": 9,
     "title": "Jane Eyre",
-    "author": "Charlotte Brontë",
+    "author": "Charlotte Bront\u00c3\u00ab",
     "year": "1847",
     "review": "A bold narrative of love, independence, and resilience.",
     "description": "Jane's journey from a troubled childhood to a passionate romance with Mr. Rochester.",
@@ -88,6 +88,14 @@
     "review": "A haunting warning against censorship and passive consumption.",
     "description": "In a future where books are banned, a fireman begins to question his role in society.",
     "percentage": "86"
+  },
+  {
+    "id": 11,
+    "title": "eee",
+    "author": "eee",
+    "year": "2002",
+    "review": "eeeeeeeeeeeee",
+    "description": "",
+    "percentage": ""
   }
-  
 ]

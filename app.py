@@ -66,30 +66,34 @@ def home_page():
 
 @app.route("/book/<book_id>")
 def book_details(book_id):
-    books = load_books()
-    
-    # Find the book using a loop
-    book = None
-    for b in books:
-        if str(b.get("id")) == str(book_id):
-            book = b
-            break
+    if "user" not in session:
+        return redirect("/login")
+        # show login alert
+    else:
+        books = load_books()
+        
+        # Find the book using a loop
+        book = None
+        for b in books:
+            if str(b.get("id")) == str(book_id):
+                book = b
+                break
 
-    if not book:
-        return "<h1>Book not found</h1>"
+        if not book:
+            return "<h1>Book not found</h1>"
 
-    content = get_html("templates/bookDetails") 
-    content = content.replace("{{title}}", book.get("title", "N/A"))
-    content = content.replace("{{author}}", book.get("author", "N/A"))
-    content = content.replace("{{year}}", str(book.get("year", "N/A")))
-    content = content.replace("{{review}}", book.get("review", "N/A"))
+        content = get_html("templates/bookDetails") 
+        content = content.replace("{{title}}", book.get("title", "N/A"))
+        content = content.replace("{{author}}", book.get("author", "N/A"))
+        content = content.replace("{{year}}", str(book.get("year", "N/A")))
+        content = content.replace("{{review}}", book.get("review", "N/A"))
 
-    # Only show description and percentage if they exist
-    description_html = f"<p class='details-p'><strong>Description:</strong> {book['description']}</p>" if book.get("description") else ""
-    percentage_html = f"<p class='details-p'><strong>Percentage Read:</strong> {book['percentage']}%</p>" if book.get("percentage") else ""
+        # Only show description and percentage if they exist
+        description_html = f"<p class='details-p'><strong>Description:</strong> {book['description']}</p>" if book.get("description") else ""
+        percentage_html = f"<p class='details-p'><strong>Percentage Read:</strong> {book['percentage']}%</p>" if book.get("percentage") else ""
 
-    content = content.replace("{{description}}", description_html)
-    content = content.replace("{{percentage}}", percentage_html)
+        content = content.replace("{{description}}", description_html)
+        content = content.replace("{{percentage}}", percentage_html)
 
     return content
 
@@ -142,6 +146,8 @@ def register_page():
 def add_page():
     if "user" not in session:
         return redirect("/login")
+        # show login alert
+    
     if request.method == 'POST':
         title = request.form['title']
         author = request.form['author']
@@ -154,6 +160,13 @@ def add_page():
         return redirect("/home?success=Book+Added+Successfully!")
     
     return get_html("templates/addForm")
+
+@app.route("/profile")
+def profile_page():
+    if "user" not in session:
+        return redirect("/login")
+        # show login alert
+    return get_html("templates/profile")
 
 @app.route("/logout")
 def logout():

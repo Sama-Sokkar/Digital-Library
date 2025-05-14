@@ -1,14 +1,16 @@
 .title {
   color: #003e5b;
+  background-color: #fbf8f0;
 }
 
 .homeP {
   color: #8987d0;
   font-size: 1.2rem;
   margin: 3px;
+  background-color: #fbf8f0;
 }
 
 .homeImg {
-  width: 70%;
+  width: 18%;
   margin-top: auto;
 }
