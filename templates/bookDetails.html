@@ -3,14 +3,18 @@
   <head>
     <meta charset="UTF-8" />
     <title>{{title}}</title>
+    <link rel="stylesheet" href="/static/css/bookDetails.css" />
   </head>
-  <body>
-    <h1>{{title}}</h1>
-    <p><strong>Author:</strong> {{author}}</p>
-    <p><strong>Year:</strong> {{year}}</p>
-    <p><strong>Review:</strong> {{review}}</p>
+  <body class="details-body">
+    <div class="container">
+      <h1 class="details-title">{{title}}</h1>
+      <p class="details-p"><strong>Author:</strong> {{author}}</p>
+      <p class="details-p"><strong>Year:</strong> {{year}}</p>
+      <p class="details-p"><strong>Review:</strong> {{review}}</p>
 
-    {{description}} {{percentage}}
-    <a href="/home">Back to Home</a>
+      {{description}} {{percentage}}
+
+      <!-- <a href="/home">Back to Home</a> -->
+    </div>
   </body>
 </html>

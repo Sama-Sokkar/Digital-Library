@@ -1,0 +1,30 @@
+/* Color palette : beige: #fbf8f0, blue: #003e5b, purple: #b8b6f2  darker-purple: #8987d0*/
+
+.details-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #fbf8f0;
+}
+
+.container {
+  background-color: #f8f8f8;
+  border: 1px solid #003e5b;
+  padding: 30px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  width: 60%;
+  max-width: 800px;
+  border-radius: 10px;
+  color: #003e5b;
+}
+
+.details-title {
+  text-align: center;
+}
+
+.details-p {
+  font-size: 1.2rem;
+  margin: 10px 0;
+}

@@ -85,8 +85,8 @@ def book_details(book_id):
     content = content.replace("{{review}}", book.get("review", "N/A"))
 
     # Only show description and percentage if they exist
-    description_html = f"<p><strong>Description:</strong> {book['description']}</p>" if book.get("description") else ""
-    percentage_html = f"<p><strong>Percentage:</strong> {book['percentage']}%</p>" if book.get("percentage") else ""
+    description_html = f"<p class='details-p'><strong>Description:</strong> {book['description']}</p>" if book.get("description") else ""
+    percentage_html = f"<p class='details-p'><strong>Percentage Read:</strong> {book['percentage']}%</p>" if book.get("percentage") else ""
 
     content = content.replace("{{description}}", description_html)
     content = content.replace("{{percentage}}", percentage_html)
