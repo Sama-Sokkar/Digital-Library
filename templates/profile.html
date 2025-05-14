@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/static/css/style.css" />
-    <link rel="stylesheet" href="/static/css/profile.css" />
+    <link rel="stylesheet" href="/static/css/homeBooks.css" />
 
     <title>Your Library</title>
   </head>
@@ -31,9 +31,10 @@
           {{auth_buttons}}
         </div>
       </nav>
-      <h1 class="profile-title">Hello!</h1>
-      
-      <!-- <span id="usernameDisplay"></span> -->
+      <h1 id="usernameDisplay" class="homeTitle"></h1>
+      <!-- <h1>Welcome, {{user_email}} !</h1> -->
+      <h2 class="homeTitle">Welcome to your Digital Library :)</h2>
+      <div class="bookGrid">{{user_books}}</div>
     </div>
 
     <script src="/static/js/formValidation.js"></script>

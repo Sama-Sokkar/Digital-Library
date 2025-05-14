@@ -1,17 +1,8 @@
-/* .content {
-  background-image: url("/static/images/back.jpeg");
-  background-repeat: repeat;
-  background-size: 60%;
-  min-height: 100vh;
-} */
-/* background-position: center; */
-
 .homeTitle {
   color: #003e5b;
   text-align: center;
   margin: 2rem 0;
   background-color: #fbf8f0;
-
 }
 
 .bookGrid {

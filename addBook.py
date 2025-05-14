@@ -1,4 +1,6 @@
+from flask import request,redirect,session
 import json
+
 
 books_file = "data/books.json"
 
@@ -12,11 +14,6 @@ def  save_books(books):
     with open(books_file,"w") as file:
         return json.dump(books,file,indent=2)
 
-# def register_book(title, author, year,review,description,percentage):
-#     books = load_books()
-#     books.append({"title" :title,"author" : author,"year" : year,"review" : review,"description":description,"percentage":percentage})
-#     save_books(books)
-
 def register_book(title, author, year, review, description, percentage):
     books = load_books()
     new_book = {
@@ -26,7 +23,8 @@ def register_book(title, author, year, review, description, percentage):
         "year": year,
         "review": review,
         "description": description,
-        "percentage": percentage
+        "percentage": percentage,
+        "owner_email": session["user"]["email"]
     }
     books.append(new_book)
     save_books(books)

@@ -37,6 +37,6 @@ document.addEventListener("DOMContentLoaded", () => {
   const nameValue = localStorage.getItem("name");
   if (nameValue) {
     document.getElementById("usernameDisplay").innerText =
-      "Hello, " + nameValue + "! :)";
+      "Hello, " + nameValue + "!";
   }
 });

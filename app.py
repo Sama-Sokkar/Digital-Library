@@ -165,8 +165,40 @@ def add_page():
 def profile_page():
     if "user" not in session:
         return redirect("/login")
-        # show login alert
-    return get_html("templates/profile")
+    
+    user_email = session["user"]["email"]
+    books = load_books()
+
+    user_books = [book for book in books if book.get("owner_email") == user_email]
+
+    content = get_html("templates/profile")
+
+    books_html = ""
+    for book in user_books:
+        description_html = f"<p><strong>Description:</strong> {book['description']}</p>" if book.get("description") else ""
+        percentage_html = f"<p><strong>Percentage Read:</strong> {book['percentage']}%</p>" if book.get("percentage") else ""
+
+        books_html += f"""
+        <div class='book-card'>
+            <h3>{book['title']}</h3>
+            <p><strong>Author:</strong> {book['author']}</p>
+            <p><strong>Year:</strong> {book['year']}</p>
+            <p><strong>Review:</strong> {book['review']}</p>
+            {description_html}
+            {percentage_html}
+            <a href="/book/{book['id']}" class="details-link">View Details</a>
+            <a href="#" class="details-link">Edit</a>
+            <a href="#" class="details-link">Delete</a>
+
+        </div>
+        """
+
+    content = content.replace("{{user_books}}", books_html)
+    content = content.replace("{{user_email}}", user_email)
+
+    return content
+
+
 
 @app.route("/logout")
 def logout():
