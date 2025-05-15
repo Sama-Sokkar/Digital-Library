@@ -9,21 +9,12 @@
     "percentage": "92"
   },
   {
-    "id": 2,
-    "title": "1984",
-    "author": "George Orwell",
-    "year": "1949",
-    "review": "A powerful dystopian novel about surveillance and control.",
-    "description": "A totalitarian regime uses surveillance to control its citizens' every move.",
-    "percentage": "98"
-  },
-  {
     "id": 3,
     "title": "To Kill a Mockingbird",
     "author": "Harper Lee",
     "year": "1960",
     "review": "A gripping story of racial injustice in the American South.",
-    "description": "The narrative explores the deeply ingrained racial prejudice in a small town.",
+    "description": "",
     "percentage": "95"
   },
   {
@@ -33,7 +24,8 @@
     "year": "1813",
     "review": "A witty and romantic exploration of social class and marriage.",
     "description": "The story of Elizabeth Bennet and her relationship with the proud Mr. Darcy.",
-    "percentage": "90"
+    "percentage": "",
+    "owner_email": "eunoia@email.com"
   },
   {
     "id": 5,
@@ -41,8 +33,9 @@
     "author": "J.D. Salinger",
     "year": "1951",
     "review": "A raw portrayal of teenage angst and rebellion.",
-    "description": "",
-    "percentage": ""
+    "description": "Holden Caulfield shares his experiences of alienation in a critical world.",
+    "percentage": "88",
+    "owner_email": "samaayman46@yahoo.com"
   },
   {
     "id": 6,
@@ -51,25 +44,28 @@
     "year": "1851",
     "review": "An epic tale of obsession and the sea.",
     "description": "",
-    "percentage": ""
+    "percentage": "87",
+    "owner_email": "samasokkar15@gmail.com"
   },
   {
     "id": 7,
     "title": "Crime and Punishment",
     "author": "Fyodor Dostoevsky",
-    "year": "1866",
+    "year": "1867",
     "review": "A deep psychological study of guilt and redemption.",
     "description": "The inner turmoil of Raskolnikov, a man who believes he's above moral law after committing murder.",
-    "percentage": "91"
+    "percentage": "93",
+    "owner_email": "samasokkar20@gmail.com"
   },
   {
     "id": 8,
-    "title": "The Hobbit",
+    "title": "Sama",
     "author": "J.R.R. Tolkien",
     "year": "1937",
     "review": "A charming and adventurous prelude to the epic Lord of the Rings.",
     "description": "Bilbo Baggins embarks on an unexpected journey to help reclaim a lost dwarven kingdom.",
-    "percentage": "93"
+    "percentage": "98",
+    "owner_email": "eunoia@email.com"
   },
   {
     "id": 9,
@@ -78,7 +74,8 @@
     "year": "1847",
     "review": "A bold narrative of love, independence, and resilience.",
     "description": "Jane's journey from a troubled childhood to a passionate romance with Mr. Rochester.",
-    "percentage": "89"
+    "percentage": "89",
+    "owner_email": "samaayman46@yahoo.com"
   },
   {
     "id": 10,
@@ -87,65 +84,46 @@
     "year": "1953",
     "review": "A haunting warning against censorship and passive consumption.",
     "description": "In a future where books are banned, a fireman begins to question his role in society.",
-    "percentage": "86"
+    "percentage": "86",
+    "owner_email": "samasokkar15@gmail.com"
   },
   {
     "id": 11,
-    "title": "ss",
-    "author": "ss",
-    "year": "22",
-    "review": "dffff",
-    "description": "dd,nblscnlksdvndd",
-    "percentage": "50",
-    "owner_email": "samaayman46@yahoo.com"
+    "title": "Brave New World",
+    "author": "Deda",
+    "year": "1999",
+    "review": "A futuristic society where comfort replaces freedom.",
+    "description": "Explores a world of genetic engineering, consumerism, and loss of individuality.",
+    "percentage": "91",
+    "owner_email": "samasokkar20@gmail.com"
   },
   {
     "id": 12,
-    "title": "ssaa",
-    "author": "ss",
-    "year": "22",
-    "review": "dffff",
-    "description": "dddd",
-    "percentage": "",
+    "title": "Frankenstein",
+    "author": "Mary Shelley",
+    "year": "1818",
+    "review": "A chilling tale of creation and consequence.",
+    "description": "Victor Frankenstein creates life and must face the horrific results.",
+    "percentage": "88",
+    "owner_email": "eunoia@email.com"
+  },
+  {
+    "id": 13,
+    "title": "Dracula",
+    "author": "Bram Stoker",
+    "year": "1897",
+    "review": "The classic vampire novel that started it all.",
+    "description": "A gripping story of Count Dracula's attempt to move from Transylvania to Englandddd.",
+    "percentage": "85",
     "owner_email": "samaayman46@yahoo.com"
   },
   {
-    "id": 11,
-    "title": "ss",
-    "author": "ss",
-    "year": "22",
-    "review": "dffff",
-    "description": "dd,nblscnlksdvndd",
-    "percentage": "50",
-    "owner_email": "samaayman46@yahoo.com"
-  },
-  {
-    "id": 11,
-    "title": "ss",
-    "author": "ss",
-    "year": "22",
-    "review": "dffff",
-    "description": "dd,nblscnlksdvndd",
-    "percentage": "50",
-    "owner_email": "samaayman46@yahoo.com"
-  },
-  {
-    "id": 11,
-    "title": "ss",
-    "author": "ss",
-    "year": "22",
-    "review": "dffff",
-    "description": "dd,nblscnlksdvndd",
-    "percentage": "50",
-    "owner_email": "samaayman46@yahoo.com"
-  },
-  {
-    "id": 16,
-    "title": "qqq",
-    "author": "qq",
-    "year": "55",
-    "review": ";lmlnkjbjhkvhgcxf",
-    "description": "",
+    "id": 14,
+    "title": "sss",
+    "author": "sss",
+    "year": "322",
+    "review": "sss",
+    "description": "abcde",
     "percentage": "50",
     "owner_email": "samasokkar20@gmail.com"
   }

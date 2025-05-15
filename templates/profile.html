@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/static/css/style.css" />
     <link rel="stylesheet" href="/static/css/homeBooks.css" />
+    <link rel="stylesheet" href="/static/css/bookForm.css" />
 
     <title>Your Library</title>
   </head>
@@ -25,18 +26,104 @@
             <a href="/profile">Profile</a>
           </li>
         </ul>
-        <div class="logButtons">
-          <!-- <span id="usernameDisplay"></span> -->
-
-          {{auth_buttons}}
-        </div>
+        <div class="logButtons">{{auth_buttons}}</div>
       </nav>
       <h1 id="usernameDisplay" class="homeTitle"></h1>
-      <!-- <h1>Welcome, {{user_email}} !</h1> -->
       <h2 class="homeTitle">Welcome to your Digital Library :)</h2>
       <div class="bookGrid">{{user_books}}</div>
+
+      <!--------------------- MODAL WINDOW --------------------->
+
+      <div id="editModal" class="modal">
+        <div class="addForm editForm">
+          <span
+            class="close"
+            style="float: right; font-size: 24px; cursor: pointer"
+            >&times;</span
+          >
+          <h2 class="addTitle">Edit Book</h2>
+          <form id="editForm" method="POST" action="/edit_book">
+            <input type="hidden" name="id" id="editId" />
+
+            <label class="addLabel"
+              >Title <span class="star">*</span>:
+              <input
+                type="text"
+                name="title"
+                class="addInput"
+                id="editTitle"
+                required
+              /> </label
+            ><br />
+
+            <label class="addLabel"
+              >Author <span class="star">*</span>:
+              <input
+                type="text"
+                name="author"
+                class="addInput"
+                id="editAuthor"
+                required
+              /> </label
+            ><br />
+
+            <label class="addLabel"
+              >Year <span class="star">*</span>:
+              <input
+                type="number"
+                name="year"
+                min="0"
+                max="2025"
+                class="addInput"
+                id="editYear"
+              /> </label
+            ><br />
+
+            <label class="addLabel"
+              >Review <span class="star">*</span>:
+              <textarea
+                name="review"
+                rows="3"
+                cols="40"
+                placeholder="Write your review ..."
+                class="addInput"
+                id="editReview"
+                required
+              ></textarea></label
+            ><br />
+
+            <label class="addLabel"
+              >Description:
+              <textarea
+                name="description"
+                rows="4"
+                cols="40"
+                class="addInput"
+                id="editDescription"
+              ></textarea></label
+            ><br />
+
+            <label class="addLabel"
+              >Percentage Read:
+              <input
+                type="number"
+                name="percentage"
+                min="0"
+                max="100"
+                step="1"
+                placeholder="0 - 100%"
+                class="addInput"
+                id="editPercentage"
+              /> </label
+            ><br />
+
+            <button type="submit" class="addButton">Save Changes</button>
+          </form>
+        </div>
+      </div>
     </div>
 
     <script src="/static/js/formValidation.js"></script>
+    <script src="/static/js/editBook.js"></script>
   </body>
 </html>

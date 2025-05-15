@@ -1,7 +1,7 @@
 import flask
 from flask import request,redirect,session
 from authorization import load_users, save_users, is_registered, register_user
-from addBook import register_book,load_books
+from addBook import register_book,load_books,save_books
 
 
 app = flask.Flask("library")
@@ -187,7 +187,15 @@ def profile_page():
             {description_html}
             {percentage_html}
             <a href="/book/{book['id']}" class="details-link">View Details</a>
-            <a href="#" class="details-link">Edit</a>
+            <a href="#" class="details-link edit-button"
+            data-id="{book['id']}"
+            data-title="{book['title']}"
+            data-author="{book['author']}"
+            data-year="{book['year']}"
+            data-review="{book['review']}"
+            data-description="{book.get('description', '')}"
+            data-percentage="{book.get('percentage', '')}">Edit</a>
+
             <a href="#" class="details-link">Delete</a>
 
         </div>
@@ -197,6 +205,28 @@ def profile_page():
     content = content.replace("{{user_email}}", user_email)
 
     return content
+
+
+
+@app.route("/edit_book", methods=["POST"])
+def edit_book():
+    books = load_books()
+    book_id = request.form["id"]
+
+    for book in books:
+        if str(book["id"]) == book_id:
+            book["title"] = request.form["title"]
+            book["author"] = request.form["author"]
+            book["year"] = request.form["year"]
+            book["review"] = request.form["review"]
+            book["description"] = request.form["description"]
+            book["percentage"] = request.form["percentage"]
+            break
+
+    save_books(books)
+
+    return redirect("/profile")
+
 
 
 
