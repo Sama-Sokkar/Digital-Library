@@ -195,8 +195,8 @@ def profile_page():
             data-review="{book['review']}"
             data-description="{book.get('description', '')}"
             data-percentage="{book.get('percentage', '')}">Edit</a>
+            <a href="#" class="details-link delete-button" data-id="{book['id']}">Delete</a>
 
-            <a href="#" class="details-link">Delete</a>
 
         </div>
         """
@@ -226,6 +226,17 @@ def edit_book():
     save_books(books)
 
     return redirect("/profile")
+
+
+@app.route("/delete_book/<book_id>", methods=["POST"])
+def delete_book(book_id):
+
+    books = load_books()
+    updated_books = [book for book in books if str(book.get("id")) != str(book_id)]
+
+    save_books(updated_books)
+    return redirect("/profile")
+
 
 
 

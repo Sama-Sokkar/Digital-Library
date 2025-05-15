@@ -38,26 +38,6 @@
     "owner_email": "samaayman46@yahoo.com"
   },
   {
-    "id": 6,
-    "title": "Khaled",
-    "author": "Herman Melville",
-    "year": "1851",
-    "review": "An epic tale of obsession and the sea.",
-    "description": "",
-    "percentage": "87",
-    "owner_email": "samasokkar15@gmail.com"
-  },
-  {
-    "id": 7,
-    "title": "Crime and Punishment",
-    "author": "Fyodor Dostoevsky",
-    "year": "1867",
-    "review": "A deep psychological study of guilt and redemption.",
-    "description": "The inner turmoil of Raskolnikov, a man who believes he's above moral law after committing murder.",
-    "percentage": "93",
-    "owner_email": "samasokkar20@gmail.com"
-  },
-  {
     "id": 8,
     "title": "TEST",
     "author": "J.R.R. Tolkien",
@@ -70,32 +50,12 @@
   {
     "id": 9,
     "title": "Jane Eyre",
-    "author": "Charlotte Bront\u00c3\u00ab",
+    "author": "Charlotte Bront",
     "year": "1847",
     "review": "A bold narrative of love, independence, and resilience.",
     "description": "Jane's journey from a troubled childhood to a passionate romance with Mr. Rochester.",
     "percentage": "89",
     "owner_email": "samaayman46@yahoo.com"
-  },
-  {
-    "id": 10,
-    "title": "Fahrenheit 451",
-    "author": "Ray Bradbury",
-    "year": "1953",
-    "review": "A haunting warning against censorship and passive consumption.",
-    "description": "In a future where books are banned, a fireman begins to question his role in society.",
-    "percentage": "86",
-    "owner_email": "samasokkar15@gmail.com"
-  },
-  {
-    "id": 11,
-    "title": "Brave New World",
-    "author": "Deda",
-    "year": "1999",
-    "review": "A futuristic society where comfort replaces freedom.",
-    "description": "Explores a world of genetic engineering, consumerism, and loss of individuality.",
-    "percentage": "91",
-    "owner_email": "samasokkar20@gmail.com"
   },
   {
     "id": 12,
@@ -124,7 +84,7 @@
     "year": "322",
     "review": "sss",
     "description": "abcde",
-    "percentage": "50",
+    "percentage": "80",
     "owner_email": "samasokkar20@gmail.com"
   }
 ]
