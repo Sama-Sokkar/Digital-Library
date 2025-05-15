@@ -16,8 +16,11 @@ def  save_books(books):
 
 def register_book(title, author, year, review, description, percentage):
     books = load_books()
+
+    max_id = max([book['id'] for book in books], default=0)
+
     new_book = {
-        "id": len(books) + 1,
+        "id": max_id + 1,
         "title": title,
         "author": author,
         "year": year,

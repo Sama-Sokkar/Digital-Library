@@ -1,90 +1,167 @@
 [
   {
     "id": 1,
-    "title": "The Great Gatsby",
-    "author": "F. Scott Fitzgerald",
-    "year": "1925",
-    "review": "A timeless classic about the American Dream.",
-    "description": "A story of wealth, love, and disillusionment in the Roaring Twenties.",
-    "percentage": "92"
+    "title": "Brave New World",
+    "author": "Aldous Huxley",
+    "year": "1932",
+    "review": "A dystopian vision of the future.",
+    "description": "",
+    "percentage": "91"
+  },
+  {
+    "id": 2,
+    "title": "Moby Dick",
+    "author": "Herman Melville",
+    "year": "1851",
+    "review": "An epic tale of obsession and revenge.",
+    "description": "Captain Ahab's relentless hunt for the white whale.",
+    "percentage": ""
   },
   {
     "id": 3,
-    "title": "To Kill a Mockingbird",
-    "author": "Harper Lee",
-    "year": "1960",
-    "review": "A gripping story of racial injustice in the American South.",
+    "title": "The Road",
+    "author": "Cormac McCarthy",
+    "year": "2006",
+    "review": "A bleak yet beautiful story of survival.",
     "description": "",
-    "percentage": "95"
+    "percentage": "87"
   },
   {
     "id": 4,
-    "title": "Pride and Prejudice",
-    "author": "Jane Austen",
-    "year": "1813",
-    "review": "A witty and romantic exploration of social class and marriage.",
-    "description": "The story of Elizabeth Bennet and her relationship with the proud Mr. Darcy.",
-    "percentage": "",
-    "owner_email": "eunoia@email.com"
+    "title": "Beloved",
+    "author": "Toni Morrison",
+    "year": "1987",
+    "review": "A haunting exploration of slavery's legacy.",
+    "description": "Sethe is haunted by the ghost of her past.",
+    "percentage": ""
   },
   {
     "id": 5,
-    "title": "The Catcher in the Rye",
-    "author": "J.D. Salinger",
-    "year": "1951",
-    "review": "A raw portrayal of teenage angst and rebellion.",
-    "description": "Holden Caulfield shares his experiences of alienation in a critical world.",
-    "percentage": "88",
+    "title": "The Alchemist",
+    "author": "Paulo Coelho",
+    "year": "1988",
+    "review": "A spiritual journey to discover one's destiny.",
+    "description": "Santiago follows his dreams across the desert.",
+    "percentage": "94"
+  },
+  {
+    "id": 6,
+    "title": "Norwegian Wood",
+    "author": "Haruki Murakami",
+    "year": "1987",
+    "review": "A poignant story of love and loss.",
+    "description": "",
+    "percentage": "90",
     "owner_email": "samaayman46@yahoo.com"
+  },
+  {
+    "id": 7,
+    "title": "1984",
+    "author": "George Orwell",
+    "year": "1949",
+    "review": "A chilling depiction of a totalitarian regime.",
+    "description": "Winston Smith rebels against Big Brother.",
+    "percentage": "",
+    "owner_email": "samasokkar15@gmail.com"
   },
   {
     "id": 8,
-    "title": "TEST",
-    "author": "J.R.R. Tolkien",
-    "year": "1937",
-    "review": "A charming and adventurous prelude to the epic Lord of the Rings.",
-    "description": "Bilbo Baggins embarks on an unexpected journey to help reclaim a lost dwarven kingdom.",
-    "percentage": "98",
-    "owner_email": "eunoia@email.com"
+    "title": "The Kite Runner",
+    "author": "Khaled Hosseini",
+    "year": "2003",
+    "review": "A moving tale of friendship and redemption.",
+    "description": "Amir seeks to atone for past mistakes.",
+    "percentage": "93",
+    "owner_email": "samasokkar20@gmail.com"
   },
   {
     "id": 9,
-    "title": "Jane Eyre",
-    "author": "Charlotte Bront",
-    "year": "1847",
-    "review": "A bold narrative of love, independence, and resilience.",
-    "description": "Jane's journey from a troubled childhood to a passionate romance with Mr. Rochester.",
-    "percentage": "89",
-    "owner_email": "samaayman46@yahoo.com"
+    "title": "Slaughterhouse-Five",
+    "author": "Kurt Vonnegut",
+    "year": "1969",
+    "review": "A satirical war novel that bends time.",
+    "description": "",
+    "percentage": "85",
+    "owner_email": "eunoia@email.com"
   },
   {
     "id": 12,
-    "title": "Frankenstein",
-    "author": "Mary Shelley",
-    "year": "1818",
-    "review": "A chilling tale of creation and consequence.",
-    "description": "Victor Frankenstein creates life and must face the horrific results.",
+    "title": "Great Expectations",
+    "author": "Charles Dickens",
+    "year": "1861",
+    "review": "A coming-of-age story full of surprises.",
+    "description": "Pip's journey from orphan to gentleman.",
     "percentage": "88",
     "owner_email": "eunoia@email.com"
   },
   {
     "id": 13,
-    "title": "Dracula",
-    "author": "Bram Stoker",
-    "year": "1897",
-    "review": "The classic vampire novel that started it all.",
-    "description": "A gripping story of Count Dracula's attempt to move from Transylvania to Englandddd.",
-    "percentage": "85",
-    "owner_email": "samaayman46@yahoo.com"
+    "title": "Wuthering Heights",
+    "author": "Emily Bronti",
+    "year": "1847",
+    "review": "A tale of passion and revenge.",
+    "description": "",
+    "percentage": "82",
+    "owner_email": "samasokkar15@gmail.com"
   },
   {
     "id": 14,
-    "title": "sss",
-    "author": "sss",
-    "year": "322",
-    "review": "sss",
-    "description": "abcde",
-    "percentage": "80",
+    "title": "The Odyssey",
+    "author": "Homer",
+    "year": "8th Century BC",
+    "review": "Epic journey of Odysseus returning home.",
+    "description": "A classic Greek epic poem.",
+    "percentage": "",
     "owner_email": "samasokkar20@gmail.com"
+  },
+  {
+    "id": 15,
+    "title": "Crime and Punishment",
+    "author": "Fyodor Dostoevsky",
+    "year": "1866",
+    "review": "Psychological exploration of guilt and redemption.",
+    "description": "",
+    "percentage": "90",
+    "owner_email": "samaayman46@yahoo.com"
+  },
+  {
+    "id": 17,
+    "title": "The Brothers Karamazov",
+    "author": "Fyodor Dostoevsky",
+    "year": "1880",
+    "review": "A deep philosophical and theological novel.",
+    "description": "Conflict between faith, doubt, and morality.",
+    "percentage": "85",
+    "owner_email": "samasokkar15@gmail.com"
+  },
+  {
+    "id": 18,
+    "title": "Jane Eyre",
+    "author": "Charlotte Bront",
+    "year": "1847",
+    "review": "A bold narrative of love, independence, and resilience.",
+    "description": "Jane's journey from a troubled childhood to romance.",
+    "percentage": "89",
+    "owner_email": "samasokkar20@gmail.com"
+  },
+  {
+    "id": 19,
+    "title": "Frankenstein",
+    "author": "Mary Shelley",
+    "year": "1818",
+    "review": "A chilling tale of creation and consequence.",
+    "description": "Victor Frankenstein creates life with tragic results.",
+    "percentage": "",
+    "owner_email": "samaayman46@yahoo.com"
+  },
+  {
+    "id": 20,
+    "title": "twenty",
+    "author": "twenty",
+    "year": "200",
+    "review": "twenty",
+    "description": "",
+    "percentage": "",
+    "owner_email": "samaayman46@yahoo.com"
   }
 ]
