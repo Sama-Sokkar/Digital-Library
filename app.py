@@ -238,9 +238,6 @@ def delete_book(book_id):
     return redirect("/profile")
 
 
-
-
-
 @app.route("/logout")
 def logout():
     session.pop("user",None)

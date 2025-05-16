@@ -1,11 +1,6 @@
 /* Color palette : beige: #fbf8f0, blue: #003e5b, purple: #b8b6f2  darker-purple: #8987d0*/
-/* .content {
-  background-image: url("/static/images/back.jpeg");
-  background-position: center;
-  background-size: contain;
-} */
-/* background-repeat: no-repeat;  */
 .container {
+  justify-content: space-between;
   background-color: #f8f8f8;
   border: 1px solid #003e5b;
   padding: 30px;
@@ -14,6 +9,11 @@
   max-width: 800px;
   border-radius: 10px;
   color: #003e5b;
+  background-image: url("/static/images/shelf.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  /* background-position: right; */
+  background-position: calc(100% - 20px)
 }
 
 .details-title {
