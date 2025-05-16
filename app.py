@@ -246,6 +246,10 @@ def delete_book(book_id):
     return redirect("/profile")
 
 
+@app.route("/contact")
+def contact():
+    return get_html("templates/contactUS")
+
 @app.route("/logout")
 def logout():
     session.pop("user",None)

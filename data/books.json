@@ -5,8 +5,8 @@
     "author": "Aldous Huxley",
     "year": "1932",
     "review": "A dystopian vision of the future.",
-    "description": "",
-    "percentage": "91"
+    "description": "A post-apocalyptic tale following a father and son's harrowing journey through a devastated America.",
+    "percentage": "100"
   },
   {
     "id": 2,
@@ -15,7 +15,7 @@
     "year": "1851",
     "review": "An epic tale of obsession and revenge.",
     "description": "Captain Ahab's relentless hunt for the white whale.",
-    "percentage": ""
+    "percentage": "100"
   },
   {
     "id": 3,
@@ -23,8 +23,8 @@
     "author": "Cormac McCarthy",
     "year": "2006",
     "review": "A bleak yet beautiful story of survival.",
-    "description": "",
-    "percentage": "87"
+    "description": "A prophetic novel set in a futuristic society driven by technological control.",
+    "percentage": "100"
   },
   {
     "id": 4,
@@ -33,7 +33,7 @@
     "year": "1987",
     "review": "A haunting exploration of slavery's legacy.",
     "description": "Sethe is haunted by the ghost of her past.",
-    "percentage": ""
+    "percentage": "100"
   },
   {
     "id": 5,
@@ -42,7 +42,7 @@
     "year": "1988",
     "review": "A spiritual journey to discover one's destiny.",
     "description": "Santiago follows his dreams across the desert.",
-    "percentage": "94"
+    "percentage": "100"
   },
   {
     "id": 6,
