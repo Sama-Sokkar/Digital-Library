@@ -246,9 +246,23 @@ def delete_book(book_id):
     return redirect("/profile")
 
 
-@app.route("/contact")
+@app.route("/contact", methods=["GET", "POST"])
 def contact():
-    return get_html("templates/contactUS")
+    if request.method == "POST":
+        name = request.form.get("name")
+        mobile = request.form.get("mobile")
+        problem = request.form.get("problem")
+
+        with open("data/contact.txt", "a") as f:
+            f.write(f"Name: {name}\n")
+            f.write(f"Mobile: {mobile}\n")
+            f.write(f"Problem: {problem}\n")
+            f.write("-" * 30 + "\n")
+
+        return redirect("/home?success=Thank+You+For+Your+Feedback+:)")
+
+
+    return get_html("templates/contactUs")
 
 @app.route("/logout")
 def logout():

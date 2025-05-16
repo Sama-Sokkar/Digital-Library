@@ -27,11 +27,23 @@
             <a href="/contact">Contact Us</a>
           </li>
         </ul>
-        <div >{{auth_buttons}}</div>
+        <div>{{auth_buttons}}</div>
       </nav>
 
       <div class="home">
         <h1 class="title">Contact Us</h1>
+        <form method="POST" action="/contact">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required />
+
+          <label for="mobile">Mobile:</label>
+          <input type="text" id="mobile" name="mobile" required />
+
+          <label for="problem">Problem:</label>
+          <textarea id="problem" name="problem" rows="5" required></textarea>
+
+          <button type="submit">Submit</button>
+        </form>
       </div>
     </div>
 

@@ -108,10 +108,10 @@
     "id": 14,
     "title": "The Odyssey",
     "author": "Homer",
-    "year": "",
+    "year": "2003",
     "review": "Epic journey of Odysseus returning home.",
-    "description": "A classic Greek epic poem.",
-    "percentage": "20",
+    "description": "A classic Greek epic poem.kjahfoewbf",
+    "percentage": "60",
     "owner_email": "samasokkar20@gmail.com"
   },
   {
@@ -135,22 +135,12 @@
     "owner_email": "samasokkar15@gmail.com"
   },
   {
-    "id": 18,
-    "title": "Jane Eyre",
-    "author": "Charlotte Bront",
-    "year": "1847",
-    "review": "A bold narrative of love, independence, and resilience.",
-    "description": "Jane's journey from a troubled childhood to romance.",
-    "percentage": "90",
-    "owner_email": "samasokkar20@gmail.com"
-  },
-  {
-    "id": 21,
-    "title": "sama",
-    "author": "sama",
-    "year": "2000",
-    "review": "sama",
-    "description": "fff",
+    "id": 22,
+    "title": "Taslemt el design",
+    "author": "Roaa Hatem",
+    "year": "2025",
+    "review": "very bad review",
+    "description": "",
     "percentage": "",
     "owner_email": "samasokkar20@gmail.com"
   }
