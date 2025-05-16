@@ -13,23 +13,13 @@ body {
 .navbar {
   background-color: #003e5b;
   display: flex;
-  justify-content: center;
-  /* width: 96.0rem; */
-  gap: 20rem;
+  justify-content: space-around;
   align-items: center;
   height: 4rem;
-  color: #fbf8f0;
-  top: 0;
   font-size: 1.2rem;
 }
 
-.logo {
-  margin: 0;
-  display: inline;
-}
-
 .navLinks a {
-  margin-left: 1.5rem;
   text-decoration: none;
   color: #fbf8f0;
   transition: color 0.3s ease;
@@ -43,6 +33,13 @@ body {
   list-style: none;
   display: flex;
   gap: 3rem;
+}
+
+.logButtons {
+  border: 2px solid #fbf8f0;
+  padding: 0.5rem;
+  border-radius: 15px;
+  margin-right: 20px;
 }
 
 .home {

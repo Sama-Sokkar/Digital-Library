@@ -11,9 +11,9 @@ def get_html(name):
     with open(name+".html","r") as html_file:
         content = html_file.read()
     if "user" in session:
-        auth_buttons = '<a href="/logout" onclick="logout()" class="navLinks">LogOut</a>'
+        auth_buttons = '<a href="/logout" onclick="logout()" class="navLinks logButtons">LogOut</a>'
     else:
-        auth_buttons = '<a href="/login" class="navLinks">Login</a><a href="/register" class="navLinks">Register</a>'
+        auth_buttons = '<a href="/login" class="navLinks logButtons">Login</a><a href="/register" class="navLinks logButtons">Register</a>'
     return content.replace("{{auth_buttons}}", auth_buttons)
 
 @app.route("/") 
