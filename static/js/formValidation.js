@@ -32,11 +32,3 @@ function validateLogin() {
 function logout() {
   localStorage.removeItem("name");
 }
-
-document.addEventListener("DOMContentLoaded", () => {
-  const nameValue = localStorage.getItem("name");
-  if (nameValue) {
-    document.getElementById("usernameDisplay").innerText =
-      "Hello, " + nameValue + "!";
-  }
-});

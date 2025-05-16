@@ -108,10 +108,10 @@
     "id": 14,
     "title": "The Odyssey",
     "author": "Homer",
-    "year": "8th Century BC",
+    "year": "",
     "review": "Epic journey of Odysseus returning home.",
     "description": "A classic Greek epic poem.",
-    "percentage": "",
+    "percentage": "20",
     "owner_email": "samasokkar20@gmail.com"
   },
   {
@@ -145,23 +145,13 @@
     "owner_email": "samasokkar20@gmail.com"
   },
   {
-    "id": 19,
-    "title": "Frankenstein",
-    "author": "Mary Shelley",
-    "year": "1818",
-    "review": "A chilling tale of creation and consequence.",
-    "description": "Victor Frankenstein creates life with tragic results.",
+    "id": 21,
+    "title": "sama",
+    "author": "sama",
+    "year": "2000",
+    "review": "sama",
+    "description": "fff",
     "percentage": "",
-    "owner_email": "samaayman46@yahoo.com"
-  },
-  {
-    "id": 20,
-    "title": "twenty",
-    "author": "twenty",
-    "year": "200",
-    "review": "twenty",
-    "description": "",
-    "percentage": "",
-    "owner_email": "samaayman46@yahoo.com"
+    "owner_email": "samasokkar20@gmail.com"
   }
 ]

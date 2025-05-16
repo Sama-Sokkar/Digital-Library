@@ -23,11 +23,7 @@
             <a href="/profile">Profile</a>
           </li>
         </ul>
-        <div class="logButtons">
-          <!-- <span id="usernameDisplay"></span> -->
-
-          {{auth_buttons}}
-        </div>
+        <div class="logButtons">{{auth_buttons}}</div>
       </nav>
 
       <div class="home">
@@ -36,7 +32,7 @@
           <p class="details-p"><strong>Author:</strong> {{author}}</p>
           <p class="details-p"><strong>Year:</strong> {{year}}</p>
           <p class="details-p"><strong>Review:</strong> {{review}}</p>
-          {{description}} {{percentage}}
+          {{description}} {{percentage}} {{owner_html}}
         </div>
       </div>
     </div>

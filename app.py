@@ -92,8 +92,13 @@ def book_details(book_id):
         description_html = f"<p class='details-p'><strong>Description:</strong> {book['description']}</p>" if book.get("description") else ""
         percentage_html = f"<p class='details-p'><strong>Percentage Read:</strong> {book['percentage']}%</p>" if book.get("percentage") else ""
 
+        owner_html = f"<p class='details-p'><strong>Added By:</strong> {book['owner_email']}</p>" if book.get("owner_email") else ""
+        
+
+
         content = content.replace("{{description}}", description_html)
         content = content.replace("{{percentage}}", percentage_html)
+        content = content.replace("{{owner_html}}", owner_html)
 
     return content
 
@@ -176,7 +181,10 @@ def profile_page():
     books_html = ""
     for book in user_books:
         description_html = f"<p><strong>Description:</strong> {book['description']}</p>" if book.get("description") else ""
+
         percentage_html = f"<p><strong>Percentage Read:</strong> {book['percentage']}%</p>" if book.get("percentage") else ""
+
+
 
         books_html += f"""
         <div class='book-card'>
