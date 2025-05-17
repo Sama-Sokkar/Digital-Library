@@ -1,20 +1,12 @@
-Name: Ozel
-Mobile: 01275179065
-Problem: aaaaaaaaaaaaaaaaa
-------------------------------
-Name: roaa
-Mobile: 01275179065
-Problem: ,jdsnclkshgvios
-------------------------------
-Name: Roaa
-Mobile: 01210127563
-Problem: taslemt el design
-------------------------------
 Name: Sama
 Mobile: 01275179065
-Problem: s.acmnlsdkvnsldvnsl
+Problem: ssssssssssssssssssss
 ------------------------------
-Name: k
-Mobile: .
-Problem: m;l
+Name: Ozel
+Mobile: 01275179065
+Problem: xxxxxxxxxxxxxxxxxxxxxxxx
+------------------------------
+Name: eventivvee
+Mobile: 01275179065
+Problem: a
 ------------------------------

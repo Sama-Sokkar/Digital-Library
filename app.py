@@ -2,6 +2,7 @@ import flask
 from flask import request,redirect,session
 from authorization import load_users, save_users, is_registered, register_user
 from addBook import register_book,load_books,save_books
+from contactClass import ContactHandler
 
 
 app = flask.Flask("library")
@@ -248,19 +249,17 @@ def delete_book(book_id):
 
 @app.route("/contact", methods=["GET", "POST"])
 def contact():
+    contact_handler = ContactHandler()
+
     if request.method == "POST":
         name = request.form.get("name")
         mobile = request.form.get("mobile")
         problem = request.form.get("problem")
 
-        with open("data/contact.txt", "a") as f:
-            f.write(f"Name: {name}\n")
-            f.write(f"Mobile: {mobile}\n")
-            f.write(f"Problem: {problem}\n")
-            f.write("-" * 30 + "\n")
+        contact_handler.set_data(name, mobile, problem)
+        contact_handler.save_to_file()
 
         return redirect("/home?success=Thank+You+For+Your+Feedback+:)")
-
 
     return get_html("templates/contactUs")
 

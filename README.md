@@ -34,7 +34,7 @@ pip install flask
     flask.session
     json
 
-- [] It contains at least one class written by you that has
+- [✅] It contains at least one class written by you that has
   both properties and methods. It uses `__init__()` to let the
   class initialize the object's attributes (note that  
   `__init__()` doesn't count as a method). This includes
@@ -44,11 +44,11 @@ pip install flask
   at least one example of a class definition in your code as
   well as the names of two properties and two methods.
 
-  - File name for the class definition:
-  - Line number(s) for the class definition:
-  - Name of two properties:
-  - Name of two methods:
-  - File name and line numbers where the methods are used:
+  - File name for the class definition: contactClass.py
+  - Line number(s) for the class definition: from line number 1 till line number 17
+  - Name of two properties: name and mobile
+  - Name of two methods: set_data() and save_to_file()
+  - File name and line numbers where the methods are used: app.py line number 259 and 260
 
 - [✅] It makes use of JavaScript in the front end and uses the
   localStorage of the web browser.
