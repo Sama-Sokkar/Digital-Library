@@ -6,6 +6,7 @@ body {
 }
 
 .content {
+  min-height: 100vh;
   background-image: url("/static/images/plain.jpeg");
   background-size: calc(100vh - 4rem);
 }

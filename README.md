@@ -56,7 +56,7 @@ pip install flask
 - [✅] It uses modern JavaScript (for example, let and const
   rather than var).
 
-- [] It makes use of the reading and writing to the same file
+- [✅] It makes use of the reading and writing to the same file
   feature.
 
 - [✅] It contains conditional statements. Please provide below
