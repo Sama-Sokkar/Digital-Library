@@ -23,7 +23,7 @@ body {
   color: #fbf8f0;
 }
 
-#error{
+#error {
   color: red;
   padding-bottom: 10px;
 }
@@ -40,6 +40,15 @@ body {
   height: 2rem;
   padding: 0.5rem 1rem;
   background-color: #fbf8f0;
+  /* display: flex; */
+}
+
+#togglePassword {
+  position: absolute;
+  top: 51.5%;
+  left: 63%;
+  cursor: pointer;
+  font-size: 1.2em;
 }
 
 .button {
