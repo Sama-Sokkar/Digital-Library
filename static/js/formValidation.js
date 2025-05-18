@@ -31,16 +31,20 @@ function validateLogin() {
 
 const togglePassword = document.getElementById("togglePassword");
 
-togglePassword.addEventListener("click", function () {
-  const passwordField =
-    document.getElementById("loginPassword") ||
-    document.getElementById("password");
-  const type =
-    passwordField.getAttribute("type") === "password" ? "text" : "password";
-  passwordField.setAttribute("type", type);
+if (togglePassword) {
+  togglePassword.addEventListener("click", function () {
+    const passwordField =
+      document.getElementById("loginPassword") ||
+      document.getElementById("password");
 
-  togglePassword.innerHTML = type === "password" ? "🔒" : "🔓";
-});
+    const type =
+      passwordField.getAttribute("type") === "password" ? "text" : "password";
+
+    passwordField.setAttribute("type", type);
+
+    togglePassword.innerHTML = type === "password" ? "🔒" : "🔓";
+  });
+}
 
 function logout() {
   localStorage.removeItem("name");

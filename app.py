@@ -270,3 +270,7 @@ def contact():
 def logout():
     session.pop("user",None)
     return get_html("templates/login")
+
+@app.errorhandler(404)
+def page_not_found(e):
+    return get_html("templates/error"), 404

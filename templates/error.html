@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/static/css/style.css" />
+
+    <title>Your Library</title>
+  </head>
+  <body>
+    <div class="content">
+      <nav class="navbar navLinks">
+        <a href="/">
+          <h3 class="logo">SmartShelf</h3>
+        </a>
+        <ul class="navUl">
+          <li>
+            <a href="/home">Home</a>
+          </li>
+          <li>
+            <a href="/addForm">Add A Book</a>
+          </li>
+          <li>
+            <a href="/profile">Profile</a>
+          </li>
+          <li>
+            <a href="/contact">Feedback</a>
+          </li>
+        </ul>
+        <div>{{auth_buttons}}</div>
+      </nav>
+      <h1 class="error">ERROR 404 <br><br>Not FOUND</h1>
+    </div>
+  </body>
+</html>
