@@ -18,6 +18,7 @@ def is_registered(email):
     users = load_users()
     return any(user["email"] == email for user in users)
 
+# hash the password
 def custom_hash(password):
     chars = string.ascii_letters + string.digits + "!@#$"
     hashed = ""
