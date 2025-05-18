@@ -140,7 +140,7 @@ def register_page():
     if request.method == 'POST':
         username = request.form['userName']
         email = request.form['email']
-        password = request.form['password']
+        password = request.form['loginPassword']
 
         if is_registered(email):
             errorMessage="Email already registered!"
