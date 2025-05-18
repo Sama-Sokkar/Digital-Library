@@ -11,7 +11,7 @@ app = flask.Flask("library")
 app.secret_key = "9z6t9V0zRJ"
 
 def get_html(name):
-    with open(name+".html","r") as html_file:
+    with open(name+".html","r",encoding="utf-8") as html_file:
         content = html_file.read()
     if "user" in session:
         auth_buttons = '<a href="/logout" onclick="logout()" class="navLinks logButtons">LogOut</a>'
