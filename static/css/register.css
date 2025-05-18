@@ -40,13 +40,21 @@ body {
   height: 2rem;
   padding: 0.5rem 1rem;
   background-color: #fbf8f0;
-  /* display: flex; */
+}
+
+.password-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.password-wrapper input {
+  width: 93%;
 }
 
 #togglePassword {
   position: absolute;
-  top: 51.5%;
-  left: 63%;
+  top: 25%;
+  right: 10px;
   cursor: pointer;
   font-size: 1.2em;
 }
