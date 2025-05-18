@@ -83,7 +83,7 @@ pip install flask
 
 - [✅] It is styled using your own CSS.
 
-- [] The code follows the code and style conventions as
+- [✅] The code follows the code and style conventions as
   introduced in the course, is fully documented using comments
   and doesn't contain unused or experimental code.  
    In particular, the code should not use `print()` or
