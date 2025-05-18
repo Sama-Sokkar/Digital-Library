@@ -1,3 +1,4 @@
+import string
 import json
 
 users_file = "data/users.json"
@@ -17,8 +18,22 @@ def is_registered(email):
     users = load_users()
     return any(user["email"] == email for user in users)
 
+def custom_hash(password):
+    chars = string.ascii_letters + string.digits + "!@#$"
+    hashed = ""
+
+    for i, char in enumerate(password):
+        # get ASCII value
+        val = ord(char) + i
+
+        hashed_char = chars[val % len(chars)]
+        hashed += hashed_char
+
+    return hashed
+
 # register the user
 def register_user(username, email, password):
     users = load_users()
-    users.append({"username": username, "email": email, "password": password})
+    hashed_password = custom_hash(password)
+    users.append({"username": username, "email": email, "password": hashed_password})
     save_users(users)

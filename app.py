@@ -3,6 +3,8 @@ from flask import request,redirect,session
 from authorization import load_users, save_users, is_registered, register_user
 from addBook import register_book,load_books,save_books
 from contactClass import ContactHandler
+from authorization import custom_hash
+
 
 
 app = flask.Flask("library")
@@ -112,16 +114,17 @@ def login_page():
     if request.method == "POST":
         loginEmail = request.form["loginEmail"]
         loginPassword = request.form["loginPassword"]
+        hashedPassword = custom_hash(loginPassword)
 
         users = load_users()
 
         for user in users:
-            if user["email"] == loginEmail and user["password"] == loginPassword:
+            if user["email"] == loginEmail and user["password"] == hashedPassword:
                 session["user"] = user
                 return redirect("/home?success=Login+Successful!")
 
             
-            elif user["email"] == loginEmail and user["password"] != loginPassword:
+            elif user["email"] == loginEmail and user["password"] != hashedPassword:
                 errorMessage="Incorrect Password!"
                 return login_page.replace("<p></p>",errorMessage)
             
