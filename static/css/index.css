@@ -14,3 +14,12 @@
   width: 16%;
   margin-top: auto;
 }
+
+@media (max-width: 550px) {
+ .home-img {
+  width: 50%;
+}
+.home-p,.title{
+  text-align: center;
+}
+}
