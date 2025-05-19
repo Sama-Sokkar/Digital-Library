@@ -286,3 +286,8 @@ def logout():
 @app.errorhandler(404)
 def page_not_found(e):
     return get_html("templates/error"), 404
+
+@app.after_request
+def add_header(response):
+    response.headers["Cache-Control"] = "no-store, no-cache, must-revalidate"
+    return response
