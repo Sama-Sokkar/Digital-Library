@@ -45,13 +45,28 @@
     "password": "#QOIUOO4"
   },
   {
-    "username": "123",
-    "email": "ahmad@test",
+    "username": "A1234",
+    "email": "ahmad@test.com",
     "password": "XZ1357"
   },
   {
-    "username": "A1234",
-    "email": "ahmad@test.com",
+    "username": "Sokkar",
+    "email": "khaled@gmail.com",
+    "password": "XZ1357"
+  },
+  {
+    "username": "Sokkar",
+    "email": "samasokkar@mail.com",
+    "password": "XZ1357"
+  },
+  {
+    "username": "Sokkar",
+    "email": "sssss@test.com",
+    "password": "XZ1357"
+  },
+  {
+    "username": "Sokkar",
+    "email": "samaa@gmail.com",
     "password": "XZ1357"
   }
 ]

@@ -139,6 +139,11 @@ def login_page():
 def register_page():
     register_page = get_html("templates/register")
 
+    if request.method == 'GET':
+        errorMessage = ""
+        return register_page.replace("<p></p>", errorMessage)
+
+
     if request.method == 'POST':
         username = request.form['userName']
         email = request.form['email']
