@@ -137,9 +137,18 @@ def register_page():
         email = request.form['email']
         password = request.form['loginPassword']
 
+        if not username or not email or not password:
+            errorMessage = "All fields are required!"
+            return register_page.replace("<p></p>", errorMessage)
+
         if is_registered(email):
             errorMessage="Email already registered!"
             return register_page.replace("<p></p>",errorMessage)
+        
+        if len(password) < 6:
+            errorMessage = "Password must be at least 6 characters long!"
+            return register_page.replace("<p></p>", errorMessage)
+
         else:
             register_user(username, email, password)
             return redirect("/login")
