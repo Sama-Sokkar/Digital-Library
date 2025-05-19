@@ -49,7 +49,7 @@ pip install flask
   - Line number(s) for the class definition: from line number 1 till line number 17
   - Name of two properties: name and mobile
   - Name of two methods: set_data() and save_to_file()
-  - File name and line numbers where the methods are used: app.py line number 259 and 260
+  - File name and line numbers where the methods are used: app.py line number 285 and 286
 
 - [✅] It makes use of JavaScript in the front end and uses the
   localStorage of the web browser.
@@ -65,14 +65,14 @@ pip install flask
   one example of a conditional statement in your code.
 
   - File name: app.py
-  - Line number(s): from line 92 to line 95
+  - Line number(s): from line 19 to line 22
 
 - [✅] It contains loops. Please provide below the file name
   and the line number(s) of at least
   one example of a loop in your code.
 
   - File name: app.py
-  - Line number(s): from line 40 to line 50
+  - Line number(s): from line 46 to line 56
 
 - [✅] It lets the user enter a value in a text box at some
   point.
