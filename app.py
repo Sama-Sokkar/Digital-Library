@@ -4,6 +4,8 @@ from authorization import load_users, save_users, is_registered, register_user
 from addBook import register_book,load_books,save_books
 from contactClass import ContactHandler
 from authorization import custom_hash
+from flask import flash, get_flashed_messages
+
 
 
 
@@ -54,15 +56,16 @@ def home_page():
     page = page.replace("{{books}}", books_html)
 
     # Inject alert if there's a success message in query params
-    success_msg = request.args.get("success")
-    if success_msg:
-        page += f"""
-        <script>
-          document.addEventListener("DOMContentLoaded", function() {{
-              showAlert("{success_msg}");
-          }});
-        </script>
-        """
+    messages = get_flashed_messages()
+    if messages:
+        for msg in messages:
+            page += f"""
+            <script>
+                document.addEventListener("DOMContentLoaded", function() {{
+                    showAlert("{msg}");
+                }});
+            </script>
+            """
 
     return page
 
@@ -121,7 +124,8 @@ def login_page():
         for user in users:
             if user["email"] == loginEmail and user["password"] == hashedPassword:
                 session["user"] = user
-                return redirect("/home?success=Login+Successful!")
+                flash("Login Successful!")
+                return redirect("/home")
 
             
             elif user["email"] == loginEmail and user["password"] != hashedPassword:
@@ -166,7 +170,8 @@ def add_page():
         percentage = request.form['percentage']
 
         register_book(title, author, year,review,description,percentage)
-        return redirect("/home?success=Book+Added+Successfully!")
+        flash("Book Added Successfully!")
+        return redirect("/home")
     
     return get_html("templates/addForm")
 
@@ -262,7 +267,8 @@ def contact():
         contact_handler.set_data(name, mobile, problem)
         contact_handler.save_to_file()
 
-        return redirect("/home?success=Thank+You+For+Your+Feedback+:)")
+        flash("Thank you for your feedback :)")
+        return redirect("/home")
 
     return get_html("templates/contactUs")
 

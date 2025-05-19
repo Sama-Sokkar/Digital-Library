@@ -141,17 +141,17 @@
     "year": "2025",
     "review": "very bad review",
     "description": "sad",
-    "percentage": "90",
+    "percentage": "80",
     "owner_email": "samasokkar20@gmail.com"
   },
   {
     "id": 23,
-    "title": "ssssssssssss",
-    "author": "ssssssssss",
+    "title": "sssssssssssssssssssssssssssssssssssssss",
+    "author": "sssssssssssssssssssssssssssssssssssssss",
     "year": "2000",
-    "review": "ssssssssssss",
-    "description": "",
-    "percentage": "",
+    "review": "sssssssssssssssssssssssssssssssssssssss",
+    "description": "sssssssssssssssssssssssssssssssssssssss",
+    "percentage": "20",
     "owner_email": "samasokkar20@gmail.com"
   }
 ]
