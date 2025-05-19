@@ -142,7 +142,7 @@ def register_page():
     if request.method == 'POST':
         username = request.form['userName']
         email = request.form['email']
-        password = request.form['loginPassword']
+        password = request.form['password']
 
         if not username or not email or not password:
             errorMessage = "All fields are required!"

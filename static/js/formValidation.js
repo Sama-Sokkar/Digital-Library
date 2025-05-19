@@ -18,6 +18,19 @@ function validateForm() {
     error.textContent = "Password must be at least 6 characters long.";
     return false;
   }
+
+  const usernameValid = /[A-Za-z]/.test(userName.value);
+  const emailValid = /^[\w.-]+@[A-Za-z0-9.-]+\.(com)$/.test(email.value);
+
+  if (!usernameValid) {
+    error.textContent = "Username must include at least one letter.";
+    return false;
+  }
+
+  if (!emailValid) {
+    error.textContent = "Email must end with .com";
+    return false;
+  }
   return true;
 }
 function validateLogin() {

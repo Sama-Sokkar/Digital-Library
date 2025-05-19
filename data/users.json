@@ -43,5 +43,15 @@
     "username": "Khaled",
     "email": "khaled@mail.com",
     "password": "#QOIUOO4"
+  },
+  {
+    "username": "123",
+    "email": "ahmad@test",
+    "password": "XZ1357"
+  },
+  {
+    "username": "A1234",
+    "email": "ahmad@test.com",
+    "password": "XZ1357"
   }
 ]
