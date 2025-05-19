@@ -275,9 +275,9 @@ def contact():
     if request.method == "POST":
         name = request.form.get("name")
         mobile = request.form.get("mobile")
-        problem = request.form.get("problem")
+        feedback = request.form.get("feedback")
 
-        contact_handler.set_data(name, mobile, problem)
+        contact_handler.set_data(name, mobile, feedback)
         contact_handler.save_to_file()
 
         flash("Thank you for your feedback :)")
