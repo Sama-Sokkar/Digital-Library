@@ -8,7 +8,7 @@ from authorization import (
 )
 from addBook import load_books, save_books, register_book
 from contactClass import ContactHandler
-
+from utils import flash_alerts
 
 app = flask.Flask("library")
 app.secret_key = "9z6t9V0zRJ"
@@ -56,17 +56,7 @@ def home_page():
         """
     page = page.replace("{{books}}", books_html)
 
-    # Inject alert if there's a success message in query params
-    messages = get_flashed_messages()
-    if messages:
-        for msg in messages:
-            page += f"""
-            <script>
-                document.addEventListener("DOMContentLoaded", function() {{
-                    showAlert("{msg}");
-                }});
-            </script>
-            """
+    page += flash_alerts("rgb(54, 168, 54)")
 
     return page
 
@@ -194,8 +184,6 @@ def profile_page():
 
         percentage_html = f"<p><strong>Percentage Read:</strong> {book['percentage']}%</p>" if book.get("percentage") else ""
 
-
-
         books_html += f"""
         <div class='book-card'>
             <h3>{book['title']}</h3>
@@ -221,6 +209,9 @@ def profile_page():
 
     content = content.replace("{{user_books}}", books_html)
     content = content.replace("{{user_email}}", user_email)
+
+    content += flash_alerts("rgb(195, 52, 52)")
+
 
     return content
 
@@ -253,6 +244,8 @@ def delete_book(book_id):
     updated_books = [book for book in books if str(book.get("id")) != str(book_id)]
 
     save_books(updated_books)
+    flash("Book Deleted Successfully!")
+
     return redirect("/profile")
 
 

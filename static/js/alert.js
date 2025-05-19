@@ -1,4 +1,4 @@
-function showAlert(message, color = "rgb(54, 168, 54)") {
+function showAlert(message, color ) {
   const alertBox = document.createElement("div");
   alertBox.className = "alert";
   alertBox.style.backgroundColor = color;
