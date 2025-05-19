@@ -14,7 +14,9 @@
         <a href="/">
           <h3 class="logo">SmartShelf</h3>
         </a>
-        <ul class="nav-ul">
+        <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+
+        <ul class="nav-ul" id="nav-choice">
           <li>
             <a href="/home">Home</a>
           </li>
@@ -42,7 +44,11 @@
           ><br />
           <label class="add-label"
             >Author <span class="star">*</span>:
-            <input type="text" name="author" required class="add-input" /></label
+            <input
+              type="text"
+              name="author"
+              required
+              class="add-input" /></label
           ><br />
           <label class="add-label"
             >Year <span class="star">*</span>:

@@ -62,3 +62,8 @@ if (togglePassword) {
 function logout() {
   localStorage.removeItem("name");
 }
+
+function toggleMenu() {
+  const nav = document.getElementById("nav-choice");
+  nav.classList.toggle("show");
+}

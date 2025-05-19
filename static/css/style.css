@@ -73,3 +73,42 @@ body {
   height: calc(100vh - 4rem);
   color: #003e5b;
 }
+
+/* Hamburger hidden by default */
+.hamburger {
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
+  color: #fbf8f0;
+}
+
+/* Media query for small screens */
+@media (max-width: 550px) {
+  .nav-ul {
+    display: none;
+    flex-direction: column;
+    background-color: #003e5b;
+    position: absolute;
+    top: 4rem;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    gap: 1rem;
+    padding: 1rem 0;
+    z-index: 10;
+  }
+
+  .nav-ul.show {
+    display: flex;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .navbar {
+    justify-content: space-between;
+    padding: 0 1rem;
+    position: relative;
+  }
+}
