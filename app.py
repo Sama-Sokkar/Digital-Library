@@ -64,6 +64,7 @@ def home_page():
 @app.route("/book/<book_id>")
 def book_details(book_id):
     if "user" not in session:
+        flash("You need to Login First")
         return redirect("/login")
         # show login alert
     else:
@@ -127,7 +128,10 @@ def login_page():
                 return login_page.replace("<p></p>",errorMessage)
             
         errorMessage="Incorrect Email!"
-        return login_page.replace("<p></p>",errorMessage)            
+        return login_page.replace("<p></p>",errorMessage)    
+       
+    login_page += flash_alerts("rgb(195, 52, 52)")
+         
     return login_page
 
 
@@ -161,7 +165,9 @@ def register_page():
 @app.route("/addForm",methods=['GET', 'POST'])
 def add_page():
     if "user" not in session:
+        flash("You need to Login First")
         return redirect("/login")
+    
         # show login alert
     
     if request.method == 'POST':
@@ -181,6 +187,7 @@ def add_page():
 @app.route("/profile")
 def profile_page():
     if "user" not in session:
+        flash("You need to Login First")
         return redirect("/login")
     
     user_email = session["user"]["email"]
@@ -280,7 +287,7 @@ def contact():
 
 @app.route("/logout")
 def logout():
-    session.pop("user",None)
+    session.clear()
     return get_html("templates/login")
 
 @app.errorhandler(404)
