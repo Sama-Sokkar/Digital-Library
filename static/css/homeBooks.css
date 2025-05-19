@@ -33,6 +33,9 @@
 .book-card p {
   margin: 10px 0;
   color: #555;
+  max-height: 6em;
+  overflow-y: auto;
+  word-wrap: break-word;
 }
 
 .details-link {
