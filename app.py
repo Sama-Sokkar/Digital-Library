@@ -1,5 +1,5 @@
 import flask
-from flask import request, redirect, session, flash, get_flashed_messages
+from flask import request, redirect, session, flash
 from authorization import (
     load_users,
     is_registered,
