@@ -118,6 +118,9 @@ def login_page():
                 flash("Login Successful!")
                 return redirect("/home")
 
+            if not loginEmail or not loginPassword:
+                errorMessage = "All fields are required!"
+                return register_page.replace("<p></p>", errorMessage)
             
             elif user["email"] == loginEmail and user["password"] != hashedPassword:
                 errorMessage="Incorrect Password!"
