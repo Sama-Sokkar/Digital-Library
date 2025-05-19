@@ -2,10 +2,9 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{{title}}</title>
+    <link rel="stylesheet" href="/static/css/bookDetails.css" />
     <link rel="stylesheet" href="/static/css/style.css" />
-    <link rel="stylesheet" href="/static/css/index.css" />
-    <title>Your Library</title>
   </head>
   <body>
     <div class="content">
@@ -33,16 +32,13 @@
       </nav>
 
       <div class="home">
-        <h1 class="title">Welcome to Your Digital Library!</h1>
-        <p class="home-p">
-          Your personalized space to explore, organize, and enjoy your digital
-          content.
-        </p>
-        <p class="home-p">
-          Whether it's books, podcasts, or articles everything you love is just
-          a click away.
-        </p>
-        <img src="static/images/shelf.png" alt="Library" class="home-img" />
+        <div class="container">
+          <h1 class="details-title">{{title}}</h1>
+          <p class="details-p"><strong>Author:</strong> {{author}}</p>
+          <p class="details-p"><strong>Year:</strong> {{year}}</p>
+          <p class="details-p"><strong>Review:</strong> {{review}}</p>
+          {{description}} {{percentage}} {{owner_html}}
+        </div>
       </div>
     </div>
 

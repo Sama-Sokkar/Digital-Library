@@ -1,4 +1,4 @@
-/* Color palette : beige: #fbf8f0, blue: #003e5b, purple: #b8b6f2  darker-purple: #8987d0*/
+/* Color palette : beige: #fbf8f0  or #f8f8f8, blue: #003e5b, purple: #b8b6f2  darker-purple: #8987d0*/
 
 body {
   background-color: #fbf8f0;
@@ -6,46 +6,107 @@ body {
 }
 
 .content {
-  height: 100vh;
+  min-height: 100vh;
+  background-image: url("/static/images/plain.jpeg");
+  background-size: calc(100vh - 4rem);
 }
 
 .navbar {
   background-color: #003e5b;
   display: flex;
-  justify-content: center;
-  gap: 20rem;
+  justify-content: space-around;
   align-items: center;
   height: 4rem;
-  color: #fbf8f0;
-  top: 0;
   font-size: 1.2rem;
 }
 
-.logo {
-  margin: 0;
-  display: inline;
-}
-
-.navLinks a {
-  margin-left: 1.5rem;
+.nav-links a {
   text-decoration: none;
   color: #fbf8f0;
   transition: color 0.3s ease;
 }
 
-.navLinks a:hover {
+.nav-links a:hover {
   color: #b8b6f2;
 }
 
-.navUl {
+.nav-ul {
   list-style: none;
   display: flex;
   gap: 3rem;
 }
 
+.log-buttons {
+  border: 2px solid #fbf8f0;
+  padding: 0.5rem;
+  border-radius: 15px;
+  margin-right: 20px;
+}
+
 .home {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   height: calc(100vh - 4rem);
+}
+
+.alert {
+  position: fixed;
+  top: 15%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 15px;
+  color: #fbf8f0;
+  transition: opacity 1s ease-out;
+  text-align: center;
+  width: 25%;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.error {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  height: calc(100vh - 4rem);
+  color: #003e5b;
+}
+
+.hamburger {
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
+  color: #fbf8f0;
+}
+
+@media (max-width: 550px) {
+  .nav-ul {
+    display: none;
+    flex-direction: column;
+    background-color: #003e5b;
+    position: absolute;
+    top: 2.5rem;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    gap: 1rem;
+    padding: 1rem 0;
+    z-index: 10;
+  }
+
+  .nav-ul.show {
+    display: flex;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .navbar {
+    justify-content: space-between;
+    padding: 0 1rem;
+    position: relative;
+  }
 }

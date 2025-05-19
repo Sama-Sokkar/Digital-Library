@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/static/css/style.css" />
-    <link rel="stylesheet" href="/static/css/index.css" />
+    <link rel="stylesheet" href="/static/css/homeBooks.css" />
+
     <title>Your Library</title>
   </head>
   <body>
@@ -13,6 +14,7 @@
         <a href="/">
           <h3 class="logo">SmartShelf</h3>
         </a>
+
         <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
 
         <ul class="nav-ul" id="nav-choice">
@@ -32,20 +34,11 @@
         <div>{{auth_buttons}}</div>
       </nav>
 
-      <div class="home">
-        <h1 class="title">Welcome to Your Digital Library!</h1>
-        <p class="home-p">
-          Your personalized space to explore, organize, and enjoy your digital
-          content.
-        </p>
-        <p class="home-p">
-          Whether it's books, podcasts, or articles everything you love is just
-          a click away.
-        </p>
-        <img src="static/images/shelf.png" alt="Library" class="home-img" />
-      </div>
+      <h1 class="home-title">Welcome to the Library</h1>
+      <div id="bookList" class="book-grid">{{books}}</div>
     </div>
 
     <script src="/static/js/formValidation.js"></script>
+    <script src="/static/js/alert.js"></script>
   </body>
 </html>

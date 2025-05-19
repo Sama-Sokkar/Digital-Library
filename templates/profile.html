@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/static/css/style.css" />
+    <link rel="stylesheet" href="/static/css/homeBooks.css" />
+    <link rel="stylesheet" href="/static/css/bookForm.css" />
+
+    <title>Your Library</title>
+  </head>
+  <body>
+    <div class="content">
+      <nav class="navbar nav-links">
+        <a href="/">
+          <h3 class="logo">SmartShelf</h3>
+        </a>
+        <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+
+        <ul class="nav-ul" id="nav-choice">
+          <li>
+            <a href="/home">Home</a>
+          </li>
+          <li>
+            <a href="/addForm">Add A Book</a>
+          </li>
+          <li>
+            <a href="/profile">Profile</a>
+          </li>
+          <li>
+            <a href="/contact">Feedback</a>
+          </li>
+        </ul>
+        <div>{{auth_buttons}}</div>
+      </nav>
+
+      <h1 id="usernameDisplay" class="home-title"></h1>
+      <h2 class="home-title">Welcome to your Digital Library :)</h2>
+      <div class="book-grid">{{user_books}}</div>
+
+      <!--------------------- MODAL WINDOW --------------------->
+
+      <div id="editModal" class="modal">
+        <div class="add-form edit-form">
+          <span
+            class="close"
+            style="float: right; font-size: 24px; cursor: pointer"
+            >&times;</span
+          >
+          <h2 class="add-title">Edit Book</h2>
+          <form id="editForm" method="POST" action="/edit_book">
+            <input type="hidden" name="id" id="editId" />
+
+            <label class="add-label"
+              >Title <span class="star">*</span>:
+              <input
+                type="text"
+                name="title"
+                class="add-input"
+                id="editTitle"
+                required
+              /> </label
+            ><br />
+
+            <label class="add-label"
+              >Author <span class="star">*</span>:
+              <input
+                type="text"
+                name="author"
+                class="add-input"
+                id="editAuthor"
+                required
+              /> </label
+            ><br />
+
+            <label class="add-label"
+              >Year <span class="star">*</span>:
+              <input
+                type="number"
+                name="year"
+                min="0"
+                max="2025"
+                class="add-input"
+                id="editYear"
+              /> </label
+            ><br />
+
+            <label class="add-label"
+              >Review <span class="star">*</span>:
+              <textarea
+                name="review"
+                rows="3"
+                cols="40"
+                placeholder="Write your review ..."
+                class="add-input"
+                id="editReview"
+                required
+              ></textarea></label
+            ><br />
+
+            <label class="add-label"
+              >Description:
+              <textarea
+                name="description"
+                rows="4"
+                cols="40"
+                class="add-input"
+                id="editDescription"
+              ></textarea></label
+            ><br />
+
+            <label class="add-label"
+              >Percentage Read:
+              <input
+                type="number"
+                name="percentage"
+                min="0"
+                max="100"
+                step="1"
+                placeholder="0 - 100%"
+                class="add-input"
+                id="editPercentage"
+              /> </label
+            ><br />
+
+            <button type="submit" class="add-button">Save Changes</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!--------------------- DELETE BUTTON --------------------->
+    <form id="deleteForm" method="POST" style="display: none"></form>
+
+    <script src="/static/js/formValidation.js"></script>
+    <script src="/static/js/editBook.js"></script>
+    <script src="/static/js/deleteBooks.js"></script>
+    <script src="/static/js/alert.js"></script>
+  </body>
+</html>

@@ -1,6 +1,92 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #fbf8f0;
+  margin: 0;
+}
+
+.form-content {
+  background-color: #003e5b;
+  border-radius: 8px;
+  width: 45%;
+  height: 65%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.356);
+}
+
+.register-title {
+  color: #fbf8f0;
+}
+
+#error {
+  color: red;
+  padding-bottom: 10px;
+}
+
 .form {
   display: flex;
   flex-direction: column;
-  width: 30%;
-  background-color: red;
+  width: 70%;
+  gap: 1.4rem;
+}
+
+.input {
+  border-radius: 8px;
+  height: 2rem;
+  padding: 0.5rem 1rem;
+  background-color: #fbf8f0;
+}
+
+.password-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.password-wrapper input {
+  width: 93%;
+}
+
+#togglePassword {
+  position: absolute;
+  top: 25%;
+  right: 10px;
+  cursor: pointer;
+  font-size: 1.2em;
+}
+
+.button {
+  border-radius: 8px;
+  background-color: #fbf8f0;
+  color: #003e5b;
+  font-size: 1rem;
+  padding: 0.7rem 2rem;
+  margin-bottom: 1rem;
+  cursor: pointer;
+  border: none;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.button:hover {
+  background-color: #007b8d;
+  transform: translateY(-2px);
+}
+
+.check-account {
+  color: #fbf8f0;
+}
+
+.check-account a {
+  color: #fbf8f0;
+  text-underline-offset: 2px;
+  font-weight: bold;
+}
+
+.check-account a:hover {
+  text-decoration: underline;
+  color: #007b8d;
 }

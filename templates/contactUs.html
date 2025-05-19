@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/static/css/style.css" />
+    <link rel="stylesheet" href="/static/css/contact.css" />
+
+    <title>Your Library</title>
+  </head>
+  <body>
+    <div class="content">
+      <nav class="navbar nav-links">
+        <a href="/">
+          <h3 class="logo">SmartShelf</h3>
+        </a>
+        <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+
+        <ul class="nav-ul" id="nav-choice">
+          <li>
+            <a href="/home">Home</a>
+          </li>
+          <li>
+            <a href="/addForm">Add A Book</a>
+          </li>
+          <li>
+            <a href="/profile">Profile</a>
+          </li>
+          <li>
+            <a href="/contact">Feedback</a>
+          </li>
+        </ul>
+        <div>{{auth_buttons}}</div>
+      </nav>
+
+      <div class="feedback-section">
+        <h1 class="feedback-header">Suggestions & Complaints</h1>
+        <form method="POST" action="/contact" class="feedback-form">
+          <label for="name" class="feedback-label">Full Name:</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            class="feedback-input"
+            required
+          />
+          <label for="mobile" class="feedback-label">Mobile:</label>
+          <input
+            type="text"
+            id="mobile"
+            name="mobile"
+            class="feedback-input"
+            required
+          />
+          <label for="feedback" class="feedback-label">Message:</label>
+          <textarea
+            id="feedback"
+            name="feedback"
+            rows="5"
+            class="feedback-input"
+            required
+          ></textarea>
+
+          <button type="submit" class="feedback-button">Send Feedback</button>
+        </form>
+      </div>
+    </div>
+
+    <script src="/static/js/formValidation.js"></script>
+  </body>
+</html>

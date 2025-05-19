@@ -1,11 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/static/css/style.css" />
+    <link rel="stylesheet" href="/static/css/bookForm.css" />
+
     <title>Your Library</title>
-</head>
-<body>
-    <h1>Add a Book</h1>
-</body>
+  </head>
+  <body>
+    <div class="content">
+      <nav class="navbar nav-links">
+        <a href="/">
+          <h3 class="logo">SmartShelf</h3>
+        </a>
+        <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+
+        <ul class="nav-ul" id="nav-choice">
+          <li>
+            <a href="/home">Home</a>
+          </li>
+          <li>
+            <a href="/addForm">Add A Book</a>
+          </li>
+          <li>
+            <a href="/profile">Profile</a>
+          </li>
+          <li>
+            <a href="/contact">Feedback</a>
+          </li>
+        </ul>
+        <div>{{auth_buttons}}</div>
+      </nav>
+
+      <!------------------- BODY ------------------->
+
+      <div class="add-content">
+        <h2 class="add-title">Add a Book</h2>
+        <form id="bookForm" method="POST" class="add-form">
+          <label class="add-label"
+            >Title <span class="star">*</span>:
+            <input type="text" name="title" class="add-input" required /></label
+          ><br />
+          <label class="add-label"
+            >Author <span class="star">*</span>:
+            <input
+              type="text"
+              name="author"
+              required
+              class="add-input" /></label
+          ><br />
+          <label class="add-label"
+            >Year <span class="star">*</span>:
+            <input
+              type="number"
+              name="year"
+              min="0"
+              max="2025"
+              class="add-input" /></label
+          ><br />
+          <label class="add-label"
+            >Review <span class="star">*</span>:
+            <textarea
+              name="review"
+              rows="3"
+              cols="40"
+              placeholder="Write your review ..."
+              class="add-input"
+              required
+            ></textarea></label
+          ><br />
+          <label class="add-label"
+            >Description:
+            <textarea
+              name="description"
+              rows="4"
+              cols="40"
+              class="add-input"
+            ></textarea></label
+          ><br />
+          <label class="add-label"
+            >Percentage Read:
+            <input
+              type="number"
+              name="percentage"
+              min="0"
+              max="100"
+              step="1"
+              placeholder="0 - 100%"
+              class="add-input"
+            /> </label
+          ><br />
+          <button type="submit" class="add-button">Add Book</button>
+        </form>
+      </div>
+    </div>
+
+    <script src="/static/js/formValidation.js"></script>
+  </body>
 </html>
