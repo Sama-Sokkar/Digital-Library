@@ -10,11 +10,11 @@
   </head>
   <body>
     <div class="content">
-      <nav class="navbar navLinks">
+      <nav class="navbar nav-links">
         <a href="/">
           <h3 class="logo">SmartShelf</h3>
         </a>
-        <ul class="navUl">
+        <ul class="nav-ul">
           <li>
             <a href="/home">Home</a>
           </li>
@@ -31,35 +31,35 @@
         <div>{{auth_buttons}}</div>
       </nav>
 
-      <div class="feedbackSection">
-        <h1 class="feedbackHeader">Suggestions & Complaints</h1>
-        <form method="POST" action="/contact" class="feedbackForm">
-          <label for="name" class="feedbackLabel">Full Name:</label>
+      <div class="feedback-section">
+        <h1 class="feedback-header">Suggestions & Complaints</h1>
+        <form method="POST" action="/contact" class="feedback-form">
+          <label for="name" class="feedback-label">Full Name:</label>
           <input
             type="text"
             id="name"
             name="name"
-            class="feedbackInput"
+            class="feedback-input"
             required
           />
-          <label for="mobile" class="feedbackLabel">Mobile:</label>
+          <label for="mobile" class="feedback-label">Mobile:</label>
           <input
             type="text"
             id="mobile"
             name="mobile"
-            class="feedbackInput"
+            class="feedback-input"
             required
           />
-          <label for="problem" class="feedbackLabel">Message:</label>
+          <label for="problem" class="feedback-label">Message:</label>
           <textarea
             id="problem"
             name="problem"
             rows="5"
-            class="feedbackInput"
+            class="feedback-input"
             required
           ></textarea>
 
-          <button type="submit" class="feedbackButton">Send Feedback</button>
+          <button type="submit" class="feedback-button">Send Feedback</button>
         </form>
       </div>
     </div>

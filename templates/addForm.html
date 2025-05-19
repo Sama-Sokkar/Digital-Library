@@ -10,11 +10,11 @@
   </head>
   <body>
     <div class="content">
-      <nav class="navbar navLinks">
+      <nav class="navbar nav-links">
         <a href="/">
           <h3 class="logo">SmartShelf</h3>
         </a>
-        <ul class="navUl">
+        <ul class="nav-ul">
           <li>
             <a href="/home">Home</a>
           </li>
@@ -33,47 +33,47 @@
 
       <!------------------- BODY ------------------->
 
-      <div class="addContent">
-        <h2 class="addTitle">Add a Book</h2>
-        <form id="bookForm" method="POST" class="addForm">
-          <label class="addLabel"
+      <div class="add-content">
+        <h2 class="add-title">Add a Book</h2>
+        <form id="bookForm" method="POST" class="add-form">
+          <label class="add-label"
             >Title <span class="star">*</span>:
-            <input type="text" name="title" class="addInput" required /></label
+            <input type="text" name="title" class="add-input" required /></label
           ><br />
-          <label class="addLabel"
+          <label class="add-label"
             >Author <span class="star">*</span>:
-            <input type="text" name="author" required class="addInput" /></label
+            <input type="text" name="author" required class="add-input" /></label
           ><br />
-          <label class="addLabel"
+          <label class="add-label"
             >Year <span class="star">*</span>:
             <input
               type="number"
               name="year"
               min="0"
               max="2025"
-              class="addInput" /></label
+              class="add-input" /></label
           ><br />
-          <label class="addLabel"
+          <label class="add-label"
             >Review <span class="star">*</span>:
             <textarea
               name="review"
               rows="3"
               cols="40"
               placeholder="Write your review ..."
-              class="addInput"
+              class="add-input"
               required
             ></textarea></label
           ><br />
-          <label class="addLabel"
+          <label class="add-label"
             >Description:
             <textarea
               name="description"
               rows="4"
               cols="40"
-              class="addInput"
+              class="add-input"
             ></textarea></label
           ><br />
-          <label class="addLabel"
+          <label class="add-label"
             >Percentage Read:
             <input
               type="number"
@@ -82,10 +82,10 @@
               max="100"
               step="1"
               placeholder="0 - 100%"
-              class="addInput"
+              class="add-input"
             /> </label
           ><br />
-          <button type="submit" class="addButton">Add Book</button>
+          <button type="submit" class="add-button">Add Book</button>
         </form>
       </div>
     </div>

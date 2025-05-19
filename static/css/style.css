@@ -20,23 +20,23 @@ body {
   font-size: 1.2rem;
 }
 
-.navLinks a {
+.nav-links a {
   text-decoration: none;
   color: #fbf8f0;
   transition: color 0.3s ease;
 }
 
-.navLinks a:hover {
+.nav-links a:hover {
   color: #b8b6f2;
 }
 
-.navUl {
+.nav-ul {
   list-style: none;
   display: flex;
   gap: 3rem;
 }
 
-.logButtons {
+.log-buttons {
   border: 2px solid #fbf8f0;
   padding: 0.5rem;
   border-radius: 15px;

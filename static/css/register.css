@@ -7,7 +7,7 @@ body {
   margin: 0;
 }
 
-.formContent {
+.form-content {
   background-color: #003e5b;
   border-radius: 8px;
   width: 45%;
@@ -19,7 +19,7 @@ body {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.356);
 }
 
-.registerTitle {
+.register-title {
   color: #fbf8f0;
 }
 
@@ -76,17 +76,17 @@ body {
   transform: translateY(-2px);
 }
 
-.checkAccount {
+.check-account {
   color: #fbf8f0;
 }
 
-.checkAccount a {
+.check-account a {
   color: #fbf8f0;
   text-underline-offset: 2px;
   font-weight: bold;
 }
 
-.checkAccount a:hover {
+.check-account a:hover {
   text-decoration: underline;
   color: #007b8d;
 }

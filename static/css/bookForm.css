@@ -1,15 +1,15 @@
-.addContent {
+.add-content {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.addTitle {
+.add-title {
   text-align: center;
   color: #003e5b;
   background-color: #fbf8f0;
 }
-.addForm {
+.add-form {
   width: 30%;
   padding: 20px;
   border: 2px solid #003e5b;
@@ -17,11 +17,11 @@
   background-color: #fbf8f0;
 }
 
-.editForm {
+.edit-form {
   margin: auto;
 }
 
-.addLabel {
+.add-label {
   font-weight: bold;
   color: #003e5b;
 }
@@ -30,7 +30,7 @@
   color: red;
 }
 
-.addInput {
+.add-input {
   width: 100%;
   padding: 8px;
   margin: 5px 0;
@@ -39,7 +39,7 @@
   box-sizing: border-box;
 }
 
-.addButton {
+.add-button {
   padding: 10px 15px;
   background-color: #003e5b;
   color: #fbf8f0;
@@ -50,6 +50,6 @@
   margin-top: 1rem;
 }
 
-.addButton:hover {
+.add-button:hover {
   background-color: #007b8d;
 }
