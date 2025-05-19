@@ -19,6 +19,9 @@ def register_book(title, author, year, review, description, percentage):
 
     max_id = max([book['id'] for book in books], default=0)
 
+    title = title.capitalize()
+    author = author.capitalize()
+
     new_book = {
         "id": max_id + 1,
         "title": title,

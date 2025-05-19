@@ -15,7 +15,9 @@ document.addEventListener("DOMContentLoaded", function () {
 document.addEventListener("DOMContentLoaded", () => {
   const nameValue = localStorage.getItem("name");
   if (nameValue) {
+    const capitalized =
+      nameValue.charAt(0).toUpperCase() + nameValue.slice(1).toLowerCase();
     document.getElementById("usernameDisplay").innerText =
-      "Hello, " + nameValue + "!";
+      "Hello, " + capitalized + "!";
   }
 });

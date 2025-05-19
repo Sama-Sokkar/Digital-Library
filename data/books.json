@@ -105,16 +105,6 @@
     "owner_email": "samasokkar15@gmail.com"
   },
   {
-    "id": 14,
-    "title": "The Odyssey",
-    "author": "Homer",
-    "year": "2003",
-    "review": "Epic journey of Odysseus returning home.",
-    "description": "A classic Greek epic poem.kjahfoewbf",
-    "percentage": "85",
-    "owner_email": "samasokkar20@gmail.com"
-  },
-  {
     "id": 15,
     "title": "Crime and Punishment",
     "author": "Fyodor Dostoevsky",
@@ -142,6 +132,26 @@
     "review": "very bad review",
     "description": "sad",
     "percentage": "80",
+    "owner_email": "samasokkar20@gmail.com"
+  },
+  {
+    "id": 23,
+    "title": "person",
+    "author": "person",
+    "year": "100",
+    "review": "personpersonpersonpersonpersonpersonpersonpersonpersonpersonpersonpersonpersonperson",
+    "description": "personpersonpersonpersonperson",
+    "percentage": "50",
+    "owner_email": "person@gmail.com"
+  },
+  {
+    "id": 24,
+    "title": "Test",
+    "author": "Test",
+    "year": "100",
+    "review": "testtesttesttesttesttesttest",
+    "description": "testtesttesttesttesttesttest",
+    "percentage": "100",
     "owner_email": "samasokkar20@gmail.com"
   }
 ]
