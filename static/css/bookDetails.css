@@ -25,3 +25,10 @@
   overflow-y: auto;
   word-wrap: break-word;
 }
+
+@media (max-width: 550px) {
+  .container {
+    background-image: none;
+    width: 80%;
+  }
+}

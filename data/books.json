@@ -143,15 +143,5 @@
     "description": "personpersonpersonpersonperson",
     "percentage": "50",
     "owner_email": "person@gmail.com"
-  },
-  {
-    "id": 24,
-    "title": "Test",
-    "author": "Test",
-    "year": "100",
-    "review": "testtesttesttesttesttesttest",
-    "description": "testtesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttest",
-    "percentage": "18",
-    "owner_email": "samasokkar20@gmail.com"
   }
 ]

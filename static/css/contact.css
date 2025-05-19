@@ -50,3 +50,12 @@
 .feedback-button:hover {
   background-color: #007b8d;
 }
+
+@media (max-width: 550px) {
+  .feedback-form {
+    width: 90%;
+  }
+  .feedback-header {
+    text-align: center;
+  }
+}

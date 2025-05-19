@@ -4,11 +4,13 @@
   justify-content: center;
   align-items: center;
 }
+
 .add-title {
   text-align: center;
   color: #003e5b;
   background-color: #fbf8f0;
 }
+
 .add-form {
   width: 30%;
   padding: 20px;
@@ -52,4 +54,10 @@
 
 .add-button:hover {
   background-color: #007b8d;
+}
+
+@media (max-width: 550px) {
+  .add-form {
+    width: 75%;
+  }
 }
