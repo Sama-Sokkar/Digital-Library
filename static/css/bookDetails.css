@@ -1,4 +1,3 @@
-/* Color palette : beige: #fbf8f0, blue: #003e5b, purple: #b8b6f2  darker-purple: #8987d0*/
 .container {
   justify-content: space-between;
   background-color: #f8f8f8;
@@ -12,8 +11,7 @@
   background-image: url("/static/images/shelf.png");
   background-size: contain;
   background-repeat: no-repeat;
-  /* background-position: right; */
-  background-position: calc(100% - 20px)
+  background-position: calc(100% - 20px);
 }
 
 .details-title {

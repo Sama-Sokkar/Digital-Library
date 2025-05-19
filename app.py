@@ -1,12 +1,13 @@
 import flask
-from flask import request,redirect,session
-from authorization import load_users, save_users, is_registered, register_user
-from addBook import register_book,load_books,save_books
+from flask import request, redirect, session, flash, get_flashed_messages
+from authorization import (
+    load_users,
+    is_registered,
+    register_user,
+    custom_hash
+)
+from addBook import load_books, save_books, register_book
 from contactClass import ContactHandler
-from authorization import custom_hash
-from flask import flash, get_flashed_messages
-
-
 
 
 app = flask.Flask("library")

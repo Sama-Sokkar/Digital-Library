@@ -111,7 +111,7 @@
     "year": "2003",
     "review": "Epic journey of Odysseus returning home.",
     "description": "A classic Greek epic poem.kjahfoewbf",
-    "percentage": "60",
+    "percentage": "80",
     "owner_email": "samasokkar20@gmail.com"
   },
   {
@@ -142,16 +142,6 @@
     "review": "very bad review",
     "description": "sad",
     "percentage": "80",
-    "owner_email": "samasokkar20@gmail.com"
-  },
-  {
-    "id": 23,
-    "title": "sssssssssssssssssssssssssssssssssssssss",
-    "author": "sssssssssssssssssssssssssssssssssssssss",
-    "year": "2000",
-    "review": "sssssssssssssssssssssssssssssssssssssss",
-    "description": "sssssssssssssssssssssssssssssssssssssss",
-    "percentage": "20",
     "owner_email": "samasokkar20@gmail.com"
   }
 ]
